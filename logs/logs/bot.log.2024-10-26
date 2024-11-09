@@ -1,0 +1,11 @@
+2024-10-27 00:11:25,698 - TelegramBot - INFO - Database initialized with all tables created.
+2024-10-27 00:11:25,700 - TelegramBot - INFO - Database initialized with all tables created.
+2024-10-27 00:11:25,701 - TelegramBot - WARNING - Wallet server is not running.
+2024-10-27 00:11:25,702 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-10-27 00:11:25,702 - TelegramBot - INFO - Wallet server started.
+2024-10-27 00:11:25,809 - TelegramBot - INFO - Bot started successfully
+2024-10-27 00:11:31,711 - TelegramBot - INFO - User 400484397 started a conversation
+2024-10-27 00:11:35,229 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-27 00:11:35,230 - TelegramBot - INFO - Exchange rates RYO_BTC 0.00000021 
+2024-10-27 00:11:35,230 - TelegramBot - INFO - Exchange rates RYO_BTC 66870.00000008 
+2024-10-27 00:11:35,230 - TelegramBot - INFO - Exchange rates RUB_USD 96.7402 

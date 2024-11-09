@@ -1,0 +1,19 @@
+2024-10-26 20:34:07,872 - TelegramBot - INFO - Database initialized with all tables created.
+2024-10-26 20:34:07,874 - TelegramBot - INFO - Database initialized with all tables created.
+2024-10-26 20:34:07,876 - TelegramBot - WARNING - Wallet server is not running.
+2024-10-26 20:34:07,876 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-10-26 20:34:07,877 - TelegramBot - INFO - Wallet server started.
+2024-10-26 20:34:07,991 - TelegramBot - INFO - Bot started successfully
+2024-10-26 20:35:00,602 - TelegramBot - INFO - User 400484397 started a conversation
+2024-10-26 20:35:04,359 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:38:57,808 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:39:41,233 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:39:51,552 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:39:54,297 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:39:56,778 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:39:58,919 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:40:00,825 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:40:02,486 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:42:21,116 - TelegramBot - INFO - User 400484397 requested exchange rate information
+2024-10-26 20:42:45,470 - TelegramBot - INFO - User 400484397 started a conversation
+2024-10-26 20:42:48,443 - TelegramBot - INFO - User 400484397 requested exchange rate information

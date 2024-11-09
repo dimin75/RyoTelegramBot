@@ -1,0 +1,7 @@
+2024-10-11 11:59:05,447 - TelegramBot - INFO - Database initialized with all tables created.
+2024-10-11 11:59:05,568 - TelegramBot - INFO - Database initialized with all tables created.
+2024-10-11 11:59:05,571 - TelegramBot - WARNING - Wallet server is not running.
+2024-10-11 11:59:05,571 - TelegramBot - INFO - Created wallet directory at ./testwall
+2024-10-11 11:59:05,571 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-10-11 11:59:05,572 - TelegramBot - INFO - Wallet server started.
+2024-10-11 11:59:05,690 - TelegramBot - INFO - Bot started successfully

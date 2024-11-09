@@ -1,0 +1,10 @@
+2024-11-08 12:44:17,770 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-08 12:44:17,772 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-08 12:44:17,774 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-08 12:44:17,774 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-08 12:44:17,775 - TelegramBot - INFO - Wallet server started.
+2024-11-08 12:44:17,881 - TelegramBot - INFO - Bot started successfully
+2024-11-08 12:44:27,582 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-08 12:44:33,650 - TelegramBot - INFO - User 400484397 requested a wallet restoration
+2024-11-08 12:44:40,374 - TelegramBot - INFO - now handle_message reached for user : 400484397
+2024-11-08 12:44:57,403 - TelegramBot - INFO - now handle_message reached for user : 400484397
