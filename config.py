@@ -5,7 +5,7 @@
 
 
 # Telegram Bot
-TELEGRAM_BOT_TOKEN = "7508708170:AAFomSCTgBzVpObYjia6tKLehDnSMNKEGJQ"
+TELEGRAM_BOT_TOKEN = "-my-access-token-"
 
 # Ryo Wallet RPC
 RPC_PORT = 18082
