@@ -2,10 +2,10 @@
 # for RYO Telegram bot to centralize and simplify 
 # the process of modifying values such as API tokens, 
 # database settings, and RPC server configurations. 
-
+import os
 
 # Telegram Bot
-TELEGRAM_BOT_TOKEN = "-my-access-token-"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 # Ryo Wallet RPC
 RPC_PORT = 18082
