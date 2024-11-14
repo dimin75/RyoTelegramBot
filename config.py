@@ -3,6 +3,8 @@
 # the process of modifying values such as API tokens, 
 # database settings, and RPC server configurations. 
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Telegram Bot
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")

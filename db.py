@@ -81,6 +81,7 @@ def delete_user_wallet_record(session, wallet_record) -> bool:
 #         session.delete(wallet_record)
 #         session.commit()
 #     session.close()
+# def user_has_wallet(session, user_id):
 
 def add2db_wallet(session, user_id, user_psw, wallet_name):
     wallet = UserWallet(user_id=user_id, user_psw=user_psw, wallet_name=wallet_name)

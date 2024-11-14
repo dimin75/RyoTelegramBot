@@ -20,7 +20,7 @@
 #     handlers.
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import ContextTypes, CallbackContext
+from telegram.ext import ContextTypes, CallbackContext, ConversationHandler
 from wallet import WalletManager
 
 from logger import setup_logging
@@ -39,6 +39,7 @@ import config
 
 from rpc import delete_wallet_files
 from db import delete_user_wallet_record
+from constants import CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, SEED_PROCESS, BLOCKHEIGHT_TAKE, BALANCE, SEND
 
 logger = setup_logging()
 
@@ -172,7 +173,18 @@ async def ryo_rates_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=message)
 
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+# async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+# async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+#     await update.message.reply_text(
+#         "Welcome! Use the following commands to interact with your RYO wallet:\n" +
+#         "/create_wallet - Create new wallet\n" +
+#         "/delete_wallet - Delete your wallet\n" +
+#         "/restore_wallet - Restore wallet from seed\n" +
+#         "/balance - Check wallet balance\n" +
+#         "/send - Send funds to another wallet\n"
+#     )
+
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     if update.callback_query:
         user = update.callback_query.from_user
         chat_id = update.callback_query.message.chat_id
@@ -266,32 +278,171 @@ async def test_base(update: Update, context: CallbackContext) -> None:
     session.close()
 
 
-async def new_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user = update.message.from_user
-    user_id = user.id
+async def cvh_new_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    user_id = update.message.from_user.id
     logger.info(f"User {user_id} requested a wallet creation")
     context.user_data['user_id'] = user_id
-    logger.info(f"pass user_id to handle_message section : {user_id}")
     session = Session()
     # Checking the user wallet existence
     user_wallet = session.query(UserWallet).filter_by(user_id=user_id).first()
-
     if user_wallet:
         await update.message.reply_text(f"You already have a wallet.\nYour id: {user_wallet.user_id}\nCreated: {user_wallet.created_at}")
-        return
+        return ConversationHandler.END   
+    # if user_has_wallet(user_id):
+    #     await update.message.reply_text("You already have a wallet.")
+    #     return ConversationHandler.END
+    await update.message.reply_text("Please enter a password for your new wallet:")
+    return CREATE_WALLET
 
-    keyboard = [
-        [
-            InlineKeyboardButton("Yes", callback_data="1"),
-            InlineKeyboardButton("No", callback_data="2"),
-        ],
+async def create_wallet_password(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    password = update.message.text
+    user_id = update.message.from_user.id
+    # wallet_id = create_rpc_wallet(user_id, password)
+    # add_wallet(user_id, wallet_id)
+    # await update.message.reply_text("Wallet created successfully!")
+    rpc_user = user_id
+    password_from_user = password
+    logger.info(f" {rpc_user} now can create wallet...")
+
+    # Create session for db transaction
+    Session = init_db()
+    with Session() as session: # Create instance of sesson
+            # Create wallet via RPC-server
+            wallet_created = await create_wallet_via_rpc(rpc_user, password_from_user)
+            
+            if wallet_created:
+                # Add info about wallet to database
+                wallet_name = f"{WALLET_DIR}/{rpc_user}_wallet"
+                add2db_wallet(session, user_id=rpc_user, user_psw=password_from_user, wallet_name=wallet_name)
+                await update.message.reply_text("Wallet created successfully.")
+            else:
+                await update.message.reply_text("Failed to create wallet.")    
+    
+    return ConversationHandler.END
+
+async def cvh_handle_delete(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.message.reply_text("Are you sure to delete wallet? This action can't be undone.\n Type 'yes' to confirm.")
+    user_id = update.message.from_user.id
+    logger.info(f"User {user_id} requested a wallet deletion")
+    context.user_data['user_id'] = user_id    
+    return DELETE_WALLET
+
+async def delete_wallet_password(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    response = update.message.text.lower()
+    # if response == "yes":
+    #     delete_wallet(update.message.from_user.id)
+    #     await update.message.reply_text("Wallet deleted successfully.")
+    # else:
+    #     await update.message.reply_text("Wallet deletion cancelled.")
+    user_id = context.user_data.get('user_id')
+    wallet_name = f"{user_id}_wallet"  # wallet file name
+    if response == "yes":
+        await delete_wallet_files(wallet_name)  # file deletion
+        Session = init_db()
+        with Session() as session:
+            wallet_record = session.query(UserWallet).filter_by(user_id=user_id).first()
+            wallet_deleted = delete_user_wallet_record(session, wallet_record)  # Delete record from database
+            if wallet_deleted:
+                await update.message.reply_text("Your wallet have been deleted. To create new one use /create_wallet.")
+    else:
+        await update.message.reply_text("Wallet deletion cancelled.")            
+
+    return ConversationHandler.END
+
+async def cvh_restore_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    # user_id = update.message.from_user.id
+    user_id = update.message.from_user.id
+    logger.info(f"User {user_id} requested a wallet restoring")
+    context.user_data['user_id'] = user_id
+    session = Session()    
+    # Checking the user wallet existence
+    user_wallet = session.query(UserWallet).filter_by(user_id=user_id).first()
+    if user_wallet:
+        await update.message.reply_text(f"You already have a wallet.\nYour id: {user_wallet.user_id}\nCreated: {user_wallet.created_at}")
+        return ConversationHandler.END   
+    
+    # if user_has_wallet(user_id):
+    #     await update.message.reply_text("You already have a wallet.")
+    #     return ConversationHandler.END
+
+    await update.message.reply_text("Please enter a password for your wallet to restore:")
+    return RESTORE_WALLET
+
+async def restore_wallet_password(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    #password = update.message.text
+    user_id = update.message.from_user.id
+    response = update.message.text
+    context.user_data['user_password'] = response
+    context.user_data['user_id'] = user_id
+    await update.message.reply_text(f"Obtain your pwd: {response} for user {user_id}")
+    await update.message.reply_text(f"Now give me your seed: ")
+    return SEED_PROCESS
+
+async def restore_wallet_seed(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    response = update.message.text
+    context.user_data['seed_phrase'] = response
+    logger.info(f"Action seed phrase request raised ok. User should see his seed...")    
+    await update.message.reply_text(f"This is your seed: {response}")
+    await update.message.reply_text(f"Now give me your height: ")
+    return BLOCKHEIGHT_TAKE
+
+async def proc_wallet_bh(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    response = update.message.text if update.message.text.isdigit() else "0"
+    context.user_data['block_height'] = response
+    logger.info(f"Action block height request raised ok. User should see his block height to restore...")    
+    await update.message.reply_text(f"Let's process your full request... Finally info for restore:")
+    user_id = context.user_data.get('user_id')
+    user_password = context.user_data.get('user_password')
+    seed_phrase = context.user_data.get('seed_phrase')
+    await update.message.reply_text(f"User_id: {user_id}")
+    await update.message.reply_text(f"User password: {user_password}")
+    await update.message.reply_text(f"Seed phrase: {seed_phrase}")
+    await update.message.reply_text(f"BLOCKCHAIN HEIGHT: {response}")
+    success = await restore_wallet_via_rpc(user_id, seed_phrase, user_password, response)
+    if success:
+        session = Session()
+        add2db_wallet(session, user_id, user_password, f"{user_id}_wallet")
+        await update.message.reply_text("Your wallet has been successfully restored and saved.")
+    else:
+        await update.message.reply_text("Failed to restore wallet. Please check your seed phrase and try again.")
+    return ConversationHandler.END
+
+
+async def balance_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.message.reply_text(f"Balance_check happened")
+    return ConversationHandler.END
+
+async def send_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.message.reply_text(f"Send_address happened")
+    return ConversationHandler.END
+
+
+# async def new_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE):
+#     user = update.message.from_user
+#     user_id = user.id
+#     logger.info(f"User {user_id} requested a wallet creation")
+#     context.user_data['user_id'] = user_id
+#     logger.info(f"pass user_id to handle_message section : {user_id}")
+#     session = Session()
+#     # Checking the user wallet existence
+#     user_wallet = session.query(UserWallet).filter_by(user_id=user_id).first()
+
+#     if user_wallet:
+#         await update.message.reply_text(f"You already have a wallet.\nYour id: {user_wallet.user_id}\nCreated: {user_wallet.created_at}")
+#         return
+
+#     keyboard = [
+#         [
+#             InlineKeyboardButton("Yes", callback_data="1"),
+#             InlineKeyboardButton("No", callback_data="2"),
+#         ],
         
-    ]
+#     ]
      
     
-    reply_markup = InlineKeyboardMarkup(keyboard)
+#     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    await update.message.reply_text("Create your wallet now?", reply_markup=reply_markup)
+#     await update.message.reply_text("Create your wallet now?", reply_markup=reply_markup)
    
     # password = "user-provided-password"
     # wallet_manager = WalletManager(rpc_url=RPC_URL, rpc_user="rpc_user", rpc_password="rpc_pass")

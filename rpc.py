@@ -119,31 +119,6 @@ async def restore_wallet_via_rpc(rpc_user, seed_phrase, password, refresh_start_
             #     if result.get("result") == {} and await wallet_exists(wallet_path):
             #         return True
             # return False
-# async def restore_wallet_via_rpc(rpc_user, seed_phrase, refresh_start_height):
-#     wallet_name = f"{rpc_user}_wallet"
-#     wallet_path = os.path.join(WALLET_DIR, wallet_name)
-#     loc_rpc_url = RPC_URL
-
-#     payload = {
-#         "jsonrpc": "2.0",
-#         "id": "0",
-#         "method": "restore_wallet",
-#         "params": {
-#             "filename": wallet_name,
-#             "password": "password",  # provide pass from user
-#             "seed": seed_phrase,
-#             "refresh_start_height": refresh_start_height
-#         }
-#     }
-
-#     async with aiohttp.ClientSession() as session:
-#         async with session.post(loc_rpc_url, json=payload) as response:
-#             if response.status == 200:
-#                 result = await response.json()
-#                 # Check, if the wallet were successfully created
-#                 if result.get("result") == {} and await wallet_exists(wallet_path):
-#                     return True
-#             return False
         
 async def wallet_exists(wallet_path):
     # Checking, if the wallet exists
