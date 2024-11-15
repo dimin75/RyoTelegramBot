@@ -11,7 +11,9 @@ import subprocess
 import os
 import time
 import requests
+from requests.auth import HTTPDigestAuth
 import aiohttp
+import asyncio
 
 from logger import setup_logging
 from config import RPC_URL, RPC_PORT,WALLET_DIR
@@ -119,7 +121,132 @@ async def restore_wallet_via_rpc(rpc_user, seed_phrase, password, refresh_start_
             #     if result.get("result") == {} and await wallet_exists(wallet_path):
             #         return True
             # return False
-        
+
+async def open_wallet_rpc(rpc_user, password):
+    lrpc_user = rpc_user
+    user_wall_name = f"{lrpc_user}_wallet"
+    rpc_password = password
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    data_open_file = {
+        "jsonrpc": "2.0",
+        "id": "0",
+        "method": "open_wallet",
+        "params": {
+          "filename": user_wall_name,
+          "password": rpc_password
+        }
+    }
+    try:
+        logger.info(f"Request on opening the {user_wall_name}")
+        response_open = requests.post(url, json=data_open_file, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        await asyncio.sleep(1)  
+        result = response_open.json()
+        logger.info(f"result of wallet opening: {result}")
+        if 'error' in result:
+            logger.error(f"Error opening wallet: {result['error']['message']}")
+            return False
+        logger.info("Wallet opened successfully.")
+        return True        
+    except Exception as e:        
+       logger.error(f"Exception during wallet opening: {str(e)}")
+       print(f"Error parsing JSON response: {response_open.text}")
+       return False
+
+    if 'error' in result:
+        logger.info(f"Error opening wallet: {result['error']['message']}")
+
+async def close_wallet_rpc(rpc_user, password):
+    lrpc_user = rpc_user
+    user_wall_name = f"{lrpc_user}_wallet"
+    rpc_password = password
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    data_close_file = {
+        "jsonrpc": "2.0",
+        "id": "0",
+        "method": "close_wallet",
+        "params": {
+          "filename": user_wall_name,
+          "password": rpc_password
+        }
+    }        
+    try:
+        logger.info(f"Request on opening the {user_wall_name}")
+        response_close = requests.post(url, json=data_close_file, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        await asyncio.sleep(1)  
+        result = response_close.json()
+        logger.info(f"result of wallet closing: {result}")
+    except:        
+       print(f"Error parsing JSON response: {response_close.text}")
+
+    if 'error' in result:
+        logger.info(f"Error closing wallet: {result['error']['message']}")
+
+
+async def get_address_wallet_rpc(rpc_user, rpc_password):
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    data_addr = {
+        "jsonrpc": "2.0",
+        "id": "0",
+        "method": "get_address",
+        "params": {
+          "account_index": 0,
+          "address_index": [0,1,2,3,4]
+        }
+    }
+    try:
+        logger.info(f"Request of wallet address for: {rpc_user}")
+        response_address = requests.post(url, json=data_addr, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        await asyncio.sleep(1)  
+        result = response_address.json()
+        logger.info(f"result of wallet address requesting: {result}")     
+        if 'error' in result:
+            logger.error(f"Error requesting wallet address: {result['error']['message']}")
+            return None
+        # Return first address in list
+        # return result["result"]["addresses"][0]["address"]
+        # Extract and return all addresses in the list
+        addresses = [addr["address"] for addr in result["result"]["addresses"]]
+        return addresses        
+    except Exception as e:    
+      logger.error(f"Exception during address request: {str(e)}")
+      print(f"Error parsing JSON response: {response_address.text}")
+      return None
+
+    if 'error' in result:
+        logger.info(f"Error wallet address requesting: {result['error']['message']}")
+
+async def get_balance_wallet_rpc(rpc_user, rpc_password):
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    data_get_balance = {
+        "jsonrpc": "2.0",
+        "id": "0",
+        "method": "get_balance",
+        "params": {
+            "account_index": 0,
+            "address_indices": [0,1,2,3,4]  # address indexes which is planned to get
+        }
+    } 
+    try:
+        logger.info(f"Request of wallet balance for: {rpc_user}")
+        response_balance = requests.post(url, json=data_get_balance, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        await asyncio.sleep(1)  
+        result = response_balance.json()
+        logger.info(f"result of wallet balance request: {result}")        
+    except:    
+      print(f"Error parsing JSON response: {response_balance.text}")
+
+    if 'error' in result:
+        logger.info(f"Error of wallet balance request: {result['error']['message']}")
+
+
 async def wallet_exists(wallet_path):
     # Checking, if the wallet exists
     return os.path.exists(wallet_path)

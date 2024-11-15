@@ -8,9 +8,14 @@
 # register them to the bot.
 # Start polling.
 # Define conversation states
-from constants import CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, SEED_PROCESS, BLOCKHEIGHT_TAKE, BALANCE, SEND
+from constants import (
+    CREATE_WALLET, DELETE_WALLET, 
+    RESTORE_WALLET, SEED_PROCESS, 
+    BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, BALANCE, SEND
+    )
 #CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, BALANCE, SEND = range(5)
 
+from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler, ConversationHandler
 from handlers import start, cvh_new_wallet, test_base, restore_wallet_password 
 from handlers import create_wallet_password, ryo_rates_handler, restore_wallet_seed
@@ -23,7 +28,7 @@ from telegram.ext import Application
 from config import TELEGRAM_BOT_TOKEN
 from rpc import start_wallet_rpc, is_wallet_running
 from handlers import cvh_handle_delete, delete_wallet_password, cvh_restore_wallet
-from handlers import balance_check, send_address, proc_wallet_bh
+from handlers import balance_check, send_address, proc_wallet_bh, address_info
 
 
 logger = setup_logging()
@@ -69,8 +74,12 @@ def main() -> None:
                 MessageHandler(filters.TEXT, restore_wallet_seed),
             ],
             BLOCKHEIGHT_TAKE: [
-                MessageHandler(filters.TEXT, proc_wallet_bh),
+                MessageHandler(filters.TEXT , proc_wallet_bh),
+                #CommandHandler("address", address_info)
             ],
+            ADDRESS_REQUEST: [
+                CommandHandler("address", address_info),
+            ],            
             BALANCE: [
                 MessageHandler(filters.TEXT, balance_check),
             ],
@@ -103,7 +112,8 @@ def main() -> None:
 
     logger.info("Bot started successfully")
     # Start the bot (polling mode)
-    application.run_polling()
+    # application.run_polling()
+    application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 
 if __name__ == '__main__':

@@ -1,1 +1,989 @@
-2024-11-14 10:37:00,902 - TelegramBot - INFO - User 400484397 requested a users base content for a moment
+2024-11-15 12:00:06,654 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:00:06,657 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:00:06,657 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:00:06,658 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:00:06,658 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:00:06,658 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:00:06,658 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:00:06,659 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:00:06,659 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:00:06,768 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:00:06,768 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:00:15,615 - TelegramBot - INFO - User 400484397 requested a users base content for a moment
+2024-11-15 12:00:15,615 - TelegramBot - INFO - User 400484397 requested a users base content for a moment
+2024-11-15 12:00:21,577 - TelegramBot - INFO - User 400484397 requested a wallet creation
+2024-11-15 12:00:21,577 - TelegramBot - INFO - User 400484397 requested a wallet creation
+2024-11-15 12:00:30,846 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:00:30,846 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:00:42,950 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:00:42,950 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:00:49,824 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:00:49,824 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:01:20,836 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 12:01:20,836 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 12:01:25,438 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:01:25,438 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:01:34,013 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:01:34,013 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:01:40,255 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:01:40,255 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:01:42,221 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 12:01:42,221 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 12:22:02,038 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,038 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,038 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,038 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,041 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,041 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,041 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,041 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,041 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:02,043 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:22:02,043 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:22:02,043 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:22:02,043 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:22:02,043 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:22:02,043 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:22:02,152 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:22:02,152 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:22:02,152 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:22:02,152 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:22:02,152 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:22:14,217 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:14,217 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:14,217 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:14,217 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:14,217 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:20,799 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:22:20,799 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:22:20,799 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:22:20,799 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:22:20,799 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:22:24,263 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:24,263 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:24,263 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:24,263 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:24,263 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:22:28,321 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:28,321 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:28,321 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:28,321 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:28,321 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:22:46,547 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:22:46,547 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:22:46,547 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:22:46,547 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:22:46,547 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:22:51,105 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:51,105 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:51,105 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:51,105 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:51,105 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:52,850 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 12:22:52,850 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 12:22:52,850 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 12:22:52,850 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 12:22:52,850 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 12:22:57,412 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:57,412 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:57,412 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:57,412 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:22:57,412 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:23:22,494 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:23:22,494 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:23:22,494 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:23:22,494 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:23:22,494 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:28:27,460 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,460 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,460 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,460 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,462 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,462 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,462 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,462 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,462 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:28:27,464 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:28:27,464 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:28:27,464 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:28:27,464 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:28:27,464 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:28:27,464 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:28:27,464 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:28:27,464 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:28:27,464 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:28:27,464 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:28:27,465 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:28:27,465 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:28:27,465 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:28:27,465 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:28:27,465 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:35:09,794 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,794 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,794 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,794 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,796 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,796 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,796 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,796 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,796 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:35:09,799 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 12:35:09,799 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 12:35:09,799 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 12:35:09,799 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 12:35:09,799 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 13:00:42,183 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,183 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,183 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,183 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,185 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,185 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,185 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,185 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,185 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:00:42,196 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 13:00:42,196 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 13:00:42,196 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 13:00:42,196 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 13:00:42,196 - TelegramBot - INFO - Wallet server is running.
+2024-11-15 13:00:42,301 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:00:42,301 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:00:42,301 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:00:42,301 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:00:42,301 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:00:58,402 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:00:58,402 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:00:58,402 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:00:58,402 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:00:58,402 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:01:05,555 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:01:05,555 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:01:05,555 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:01:05,555 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:01:05,555 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:01:08,570 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:01:08,570 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:01:08,570 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:01:08,570 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:01:08,570 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:01:11,858 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:01:11,858 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:01:11,858 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:01:11,858 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:01:11,858 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:01:28,656 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:01:28,656 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:01:28,656 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:01:28,656 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:01:28,656 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:01:37,434 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:01:37,434 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:01:37,434 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:01:37,434 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:01:37,434 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:01:42,083 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:01:42,083 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:01:42,083 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:01:42,083 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:01:42,083 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:01:43,680 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:01:43,680 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:01:43,680 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:01:43,680 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:01:43,680 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:06:41,199 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,199 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,199 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,199 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,201 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,201 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,201 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,201 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:06:41,201 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,108 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,108 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,108 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,108 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,110 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,110 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,110 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,110 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,110 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:37,111 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:07:37,111 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:07:37,111 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:07:37,111 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:07:37,111 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:07:37,112 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:07:37,221 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:07:37,221 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:07:37,221 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:07:37,221 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:07:37,221 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:07:50,252 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:07:50,252 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:07:50,252 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:07:50,252 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:07:50,252 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:07:53,181 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:53,181 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:53,181 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:53,181 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:07:53,181 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:08:00,940 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:08:00,940 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:08:00,940 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:08:00,940 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:08:00,940 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 13:08:05,206 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:08:05,206 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:08:05,206 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:08:05,206 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:08:05,206 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:08:21,917 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:08:21,917 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:08:21,917 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:08:21,917 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:08:21,917 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:08:26,287 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:08:26,287 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:08:26,287 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:08:26,287 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:08:26,287 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:08:28,012 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:08:28,012 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:08:28,012 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:08:28,012 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:08:28,012 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:08:32,668 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:08:32,668 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:08:32,668 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:08:32,668 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:08:32,668 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:08:33,867 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:08:33,867 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:08:33,867 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:08:33,867 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:08:33,867 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:08:33,868 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:08:34,874 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:08:34,874 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:08:34,874 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:08:34,874 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:08:34,874 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:09:12,514 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:09:12,514 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:09:12,514 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:09:12,514 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:09:12,514 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:13,239 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:13,239 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:13,239 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:13,239 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:13,239 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:13,239 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:13,239 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:13,239 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:13,239 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:13,239 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:13,240 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:13,240 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:13,240 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:13,240 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:13,240 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:14,247 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:14,247 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:14,247 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:14,247 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:14,247 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:14,794 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:14,794 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:14,794 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:14,794 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:14,794 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:16,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:16,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:16,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:16,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:16,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:16,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:16,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:16,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:16,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:16,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:16,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:16,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:16,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:16,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:16,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:17,446 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:17,446 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:17,446 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:17,446 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:17,446 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:17,696 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:17,696 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:17,696 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:17,696 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:17,696 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:19,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:19,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:19,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:19,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:19,439 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:19,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:19,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:19,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:19,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:19,439 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:19,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:19,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:19,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:19,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:19,440 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:20,447 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:20,447 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:20,447 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:20,447 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:20,447 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:20,630 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:20,630 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:20,630 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:20,630 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:20,630 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:22,227 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:22,227 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:22,227 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:22,227 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:22,227 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:22,227 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:22,227 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:22,227 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:22,227 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:22,227 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:22,228 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:22,228 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:22,228 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:22,228 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:22,228 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:23,234 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:23,234 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:23,234 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:23,234 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:23,234 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:23,442 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:23,442 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:23,442 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:23,442 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:23,442 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:16:25,136 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:25,136 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:25,136 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:25,136 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:25,136 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:25,137 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:16:26,145 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:26,145 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:26,145 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:26,145 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:16:26,145 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:17:28,635 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:17:28,635 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:17:28,635 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:17:28,635 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:17:28,635 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:22:48,423 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:22:48,423 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:22:48,423 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:22:48,423 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:22:48,423 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:22:48,423 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:22:48,423 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:22:48,423 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:22:48,423 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:22:48,423 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:22:48,424 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:22:48,424 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:22:48,424 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:22:48,424 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:22:48,424 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:22:49,431 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:22:49,431 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:22:49,431 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:22:49,431 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:22:49,431 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:25:11,937 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:25:11,937 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:25:11,937 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:25:11,937 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:25:11,937 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:25:14,005 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:25:14,005 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:25:14,005 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:25:14,005 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:25:14,005 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:25:14,005 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:25:14,005 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:25:14,005 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:25:14,005 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:25:14,005 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:25:14,006 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:25:14,006 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:25:14,006 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:25:14,006 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:25:14,006 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:25:15,013 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:25:15,013 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:25:15,013 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:25:15,013 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:25:15,013 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:11,985 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:11,985 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:11,985 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:11,985 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:11,985 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:14,055 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:14,055 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:14,055 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:14,055 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:14,055 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:14,055 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:14,055 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:14,055 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:14,055 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:14,055 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:14,056 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:14,056 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:14,056 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:14,056 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:14,056 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:15,063 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:15,063 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:15,063 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:15,063 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:15,063 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:55,045 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:55,045 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:55,045 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:55,045 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:55,045 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:26:57,120 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:57,120 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:57,120 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:57,120 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:57,120 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:26:57,120 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:57,120 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:57,120 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:57,120 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:57,120 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:26:57,121 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:57,121 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:57,121 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:57,121 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:57,121 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:26:58,128 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:58,128 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:58,128 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:58,128 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:26:58,128 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': True}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:30:58,825 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,825 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,825 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,825 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,827 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,827 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,827 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,827 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,827 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:30:58,829 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:30:58,829 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:30:58,829 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:30:58,829 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:30:58,829 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:30:58,829 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:30:58,937 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:30:58,937 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:30:58,937 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:30:58,937 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:30:58,937 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:31:28,386 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:31:28,386 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:31:28,386 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:31:28,386 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:31:28,386 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:31:31,048 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:31:31,048 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:31:31,048 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:31:31,048 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:31:31,048 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:31:50,958 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:31:50,958 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:31:50,958 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:31:50,958 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:31:50,958 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:31:59,183 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:31:59,183 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:31:59,183 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:31:59,183 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:31:59,183 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:32:02,788 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:32:02,788 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:32:02,788 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:32:02,788 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:32:02,788 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:32:04,516 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:32:04,516 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:32:04,516 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:32:04,516 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:32:04,516 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:32:06,993 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:06,993 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:06,993 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:06,993 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:06,993 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:07,238 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:07,238 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:07,238 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:07,238 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:07,238 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:08,434 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:08,434 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:08,434 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:08,434 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:08,434 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:08,435 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:09,442 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:09,442 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:09,442 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:09,442 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:09,442 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:14,640 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:14,640 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:14,640 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:14,640 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:14,640 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:32:14,923 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:14,923 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:14,923 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:14,923 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:14,923 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:32:16,119 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:16,119 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:16,119 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:16,119 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:16,119 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:32:16,119 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:16,119 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:16,119 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:16,119 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:16,119 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:32:16,120 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:16,120 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:16,120 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:16,120 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:16,120 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:32:17,126 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:17,126 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:17,126 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:17,126 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:32:17,126 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:33:57,898 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:33:57,898 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:33:57,898 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:33:57,898 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:33:57,898 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:33:58,521 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:33:58,521 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:33:58,521 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:33:58,521 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:33:58,521 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:37:04,523 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:37:04,523 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:37:04,523 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:37:04,523 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:37:04,523 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:37:04,523 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:37:04,523 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:37:04,523 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:37:04,523 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:37:04,523 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:37:04,524 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:37:04,524 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:37:04,524 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:37:04,524 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:37:04,524 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:37:05,531 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:37:05,531 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:37:05,531 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:37:05,531 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:37:05,531 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:38:18,243 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,243 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,243 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,243 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,246 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,246 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,246 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,246 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:18,246 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,850 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,850 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,850 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,850 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,853 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,853 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,853 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,853 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:38:42,853 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,156 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,156 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,156 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,156 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,158 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,158 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,158 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,158 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,158 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:39:34,160 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:39:34,160 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:39:34,160 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:39:34,160 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:39:34,160 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:39:34,160 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:39:34,160 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:39:34,160 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:39:34,160 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:39:34,160 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:39:34,161 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:39:34,161 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:39:34,161 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:39:34,161 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:39:34,161 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:39:34,269 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:39:34,269 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:39:34,269 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:39:34,269 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:39:34,269 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:39:59,511 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:39:59,511 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:39:59,511 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:39:59,511 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:39:59,511 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:40:01,724 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:40:01,724 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:40:01,724 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:40:01,724 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:40:01,724 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:40:25,719 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:40:25,719 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:40:25,719 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:40:25,719 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:40:25,719 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:40:45,441 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:40:45,441 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:40:45,441 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:40:45,441 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:40:45,441 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:40:50,563 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:40:50,563 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:40:50,563 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:40:50,563 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:40:50,563 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:40:52,295 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:40:52,295 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:40:52,295 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:40:52,295 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:40:52,295 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:40:56,835 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:40:56,835 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:40:56,835 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:40:56,835 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:40:56,835 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:40:57,016 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:40:57,016 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:40:57,016 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:40:57,016 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:40:57,016 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:45:15,312 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:45:15,312 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:45:15,312 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:45:15,312 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:45:15,312 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:45:15,312 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:45:15,312 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:45:15,312 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:45:15,312 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:45:15,312 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:45:15,313 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:45:15,313 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:45:15,313 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:45:15,313 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:45:15,313 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:45:16,320 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:45:16,320 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:45:16,320 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:45:16,320 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:45:16,320 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:55:39,612 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,612 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,612 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,612 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,614 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,614 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,614 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,614 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,614 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:39,615 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:55:39,615 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:55:39,615 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:55:39,615 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:55:39,615 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:55:39,616 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:55:39,722 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:55:39,722 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:55:39,722 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:55:39,722 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:55:39,722 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:55:50,925 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:55:50,925 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:55:50,925 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:55:50,925 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:55:50,925 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:55:53,957 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:53,957 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:53,957 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:53,957 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:55:53,957 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:56:14,568 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:56:14,568 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:56:14,568 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:56:14,568 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:56:14,568 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:56:23,146 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:56:23,146 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:56:23,146 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:56:23,146 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:56:23,146 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:56:28,688 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:56:28,688 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:56:28,688 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:56:28,688 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:56:28,688 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:56:30,388 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:56:30,388 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:56:30,388 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:56:30,388 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:56:30,388 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:56:33,914 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:56:33,914 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:56:33,914 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:56:33,914 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:56:33,914 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:56:34,094 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:56:34,094 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:56:34,094 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:56:34,094 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:56:34,094 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:56:35,291 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:56:35,291 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:56:35,291 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:56:35,291 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:56:35,291 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:56:35,291 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:56:35,291 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:56:35,291 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:56:35,291 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:56:35,291 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:56:35,292 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:56:35,292 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:56:35,292 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:56:35,292 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:56:35,292 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:56:36,298 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:56:36,298 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:56:36,298 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:56:36,298 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:56:36,298 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:58:20,490 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,490 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,490 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,490 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,492 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,492 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,492 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,492 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,492 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:20,494 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:58:20,494 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:58:20,494 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:58:20,494 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:58:20,494 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 13:58:20,494 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:58:20,494 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:58:20,494 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:58:20,494 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:58:20,494 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 13:58:20,495 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:58:20,495 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:58:20,495 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:58:20,495 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:58:20,495 - TelegramBot - INFO - Wallet server started.
+2024-11-15 13:58:20,600 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:58:20,600 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:58:20,600 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:58:20,600 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:58:20,600 - TelegramBot - INFO - Bot started successfully
+2024-11-15 13:58:35,232 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:58:35,232 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:58:35,232 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:58:35,232 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:58:35,232 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 13:58:41,194 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:41,194 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:41,194 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:41,194 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:41,194 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 13:58:48,401 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:58:48,401 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:58:48,401 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:58:48,401 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:58:48,401 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 13:59:04,518 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:59:04,518 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:59:04,518 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:59:04,518 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:59:04,518 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 13:59:08,674 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:59:08,674 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:59:08,674 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:59:08,674 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:59:08,674 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 13:59:10,647 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:59:10,647 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:59:10,647 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:59:10,647 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:59:10,647 - TelegramBot - INFO - Added wallet for user 400484397 to database.
+2024-11-15 13:59:13,698 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:59:13,698 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:59:13,698 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:59:13,698 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:59:13,698 - TelegramBot - INFO - Action address request started...
+2024-11-15 13:59:13,884 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:59:13,884 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:59:13,884 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:59:13,884 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:59:13,884 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 13:59:15,082 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:59:15,082 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:59:15,082 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:59:15,082 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:59:15,082 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:59:15,083 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 13:59:16,090 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:59:16,090 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:59:16,090 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:59:16,090 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 13:59:16,090 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 15:12:07,113 - TelegramBot - INFO - Action address request started...
+2024-11-15 15:12:07,113 - TelegramBot - INFO - Action address request started...
+2024-11-15 15:12:07,113 - TelegramBot - INFO - Action address request started...
+2024-11-15 15:12:07,113 - TelegramBot - INFO - Action address request started...
+2024-11-15 15:12:07,113 - TelegramBot - INFO - Action address request started...
+2024-11-15 15:12:07,744 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 15:12:07,744 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 15:12:07,744 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 15:12:07,744 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 15:12:07,744 - TelegramBot - INFO - Request on opening the 400484397_wallet
+2024-11-15 15:12:09,541 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 15:12:09,541 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 15:12:09,541 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 15:12:09,541 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 15:12:09,541 - TelegramBot - INFO - result of wallet opening: {'id': '0', 'jsonrpc': '2.0', 'result': {}}
+2024-11-15 15:12:09,541 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 15:12:09,541 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 15:12:09,541 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 15:12:09,541 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 15:12:09,541 - TelegramBot - INFO - Wallet opened successfully.
+2024-11-15 15:12:09,542 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 15:12:09,542 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 15:12:09,542 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 15:12:09,542 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 15:12:09,542 - TelegramBot - INFO - Request of wallet address for: 400484397
+2024-11-15 15:12:10,549 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 15:12:10,549 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 15:12:10,549 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 15:12:10,549 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}
+2024-11-15 15:12:10,549 - TelegramBot - INFO - result of wallet address requesting: {'id': '0', 'jsonrpc': '2.0', 'result': {'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'addresses': [{'address': 'RYoLsfmhLANNkFT5dUDDsvMM3Z1Fzd57zFvJnMHcghD5j1zFEyyKovcSHMKAQ9NZZ5HeWWmzDHCL3bmdXK9b43Z7hLkWF5vzzFF', 'address_index': 0, 'label': 'Primary account', 'used': False}, {'address': 'RYoSrFLcSANVXkfFtJ81Q3TSnt1CkaeNqK1A3yxQTcKK8HNQWSeUeA9QKd1w15UE65gQoc7hzNgmdHhKR1Hgg7MqdGj8yyhFaxX', 'address_index': 1, 'label': '', 'used': False}, {'address': 'RYoSrGYjs4rVSVaezna2QZdGDCza9LYczNtPge1hs5TA7XS6fiibYxWMEhabwXTfJ4YFUGvQ4sR6hSLM7zV7fF7Z1QRjajrUmXL', 'address_index': 2, 'label': '', 'used': False}, {'address': 'RYoSrJtFfQFdoP4ZpWyuCxaLpD5z4UhSTYTeAo2THsEVEU6hMXHmTMyCNk6HwNaAiBQ6g4EaVrgJzhoQhoJiNaAEc8MDcwoAGpi', 'address_index': 3, 'label': '', 'used': False}, {'address': 'RYoSrHcVw2zKA2MdkQqEA1eYRjZ2xNQWgWfSf8ATfvDmYMdvP6S1keuXqJGkwdUgJg93uxY1n7DCjaCffBapJWVaKaAYir7iiuD', 'address_index': 4, 'label': '', 'used': False}]}}

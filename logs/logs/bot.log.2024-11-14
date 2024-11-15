@@ -1,0 +1,16 @@
+2024-11-15 12:00:06,654 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:00:06,657 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:00:06,658 - TelegramBot - WARNING - Wallet server is not running.
+2024-11-15 12:00:06,658 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir ./testwall
+2024-11-15 12:00:06,659 - TelegramBot - INFO - Wallet server started.
+2024-11-15 12:00:06,768 - TelegramBot - INFO - Bot started successfully
+2024-11-15 12:00:15,615 - TelegramBot - INFO - User 400484397 requested a users base content for a moment
+2024-11-15 12:00:21,577 - TelegramBot - INFO - User 400484397 requested a wallet creation
+2024-11-15 12:00:30,846 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:00:42,950 - TelegramBot - INFO - User 400484397 requested a wallet deletion
+2024-11-15 12:00:49,824 - TelegramBot - INFO - Database initialized with all tables created.
+2024-11-15 12:01:20,836 - TelegramBot - INFO - User 400484397 started a conversation
+2024-11-15 12:01:25,438 - TelegramBot - INFO - User 400484397 requested a wallet restoring
+2024-11-15 12:01:34,013 - TelegramBot - INFO - Action seed phrase request raised ok. User should see his seed...
+2024-11-15 12:01:40,255 - TelegramBot - INFO - Action block height request raised ok. User should see his block height to restore...
+2024-11-15 12:01:42,221 - TelegramBot - INFO - Added wallet for user 400484397 to database.
