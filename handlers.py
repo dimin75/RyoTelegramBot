@@ -413,36 +413,94 @@ async def proc_wallet_bh(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     #return BLOCKHEIGHT_TAKE 
         return ConversationHandler.END
 
+async def check_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    session = Session()
+    user_id = update.message.from_user.id
+
+   # Get user's wallet from the database
+    user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
+    if not user_wallet:
+        await update.message.reply_text("You don't have a wallet yet. Use /create_wallet to create one.")
+        session.close()
+        return ConversationHandler.END
+
+    # Save wallet ID and database password in context for further steps
+    context.user_data["user_id"] = user_id
+    context.user_data["db_password"] = user_wallet.user_psw
+
+    # Ask password from user for the wallet password
+    await update.message.reply_text("Please enter your wallet password:")
+    session.close()
+    return ADDRESS_REQUEST
+
 async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_password = update.message.text  # Get the password entered by the user
+    db_password = context.user_data.get("db_password")
     user_id = context.user_data.get("user_id")
-    user_password = context.user_data.get("user_password")
-    logger.info(f"Action address request started...")
-    await update.message.reply_text("your address request can take a time, wait please...")
-    
+
+    if not db_password or not user_id:
+        await update.message.reply_text("Failed to retrieve user data. Please try again.")
+        return ConversationHandler.END
+
+    # Check if the entered password matches the stored password
+    if user_password != db_password:
+        await update.message.reply_text("Invalid password. Please try again.")
+        return ConversationHandler.END
+
+    # Password is correct
+    await update.message.reply_text("Password accepted. Fetching your wallet address...")
+
     # Open the wallet
     wallet_opened = await open_wallet_rpc(user_id, user_password)
     if not wallet_opened:
         await update.message.reply_text("Failed to open wallet. Please try again later.")
-        return
+        return ConversationHandler.END
 
-    # Get the address of wallet
-    wallet_address = await get_address_wallet_rpc(user_id, user_password)
-    if wallet_address:
+    # Get wallet addresses
+    wallet_addresses = await get_address_wallet_rpc(user_id, user_password)
+    if wallet_addresses:
         # Output main address
-        await update.message.reply_text(f"Your main address:\n1. {wallet_address[0]}")
+        await update.message.reply_text(f"Your main address:\n1. {wallet_addresses[0]}")
 
-        # Output sub-addresses if presented:
-        if len(wallet_address) > 1:
+        # Output sub-addresses if present
+        if len(wallet_addresses) > 1:
             sub_addresses = "\n".join(
-                [f"{i + 1}. {address}" for i, address in enumerate(wallet_address[1:], start=1)]
+                [f"{i + 1}. {address}" for i, address in enumerate(wallet_addresses[1:], start=1)]
             )
             await update.message.reply_text(f"Your sub-addresses are the following:\n{sub_addresses}")
     else:
-        await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")    
-    # if wallet_address:
-    #     await update.message.reply_text(f"Your wallet (main) address: {wallet_address}")
-    # else:
-    #     await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")
+        await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")
+
+# async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+#     user_id = context.user_data.get("user_id")
+#     user_password = context.user_data.get("user_password")
+#     logger.info(f"Action address request started...")
+#     await update.message.reply_text("your address request can take a time, wait please...")
+    
+#     # Open the wallet
+#     wallet_opened = await open_wallet_rpc(user_id, user_password)
+#     if not wallet_opened:
+#         await update.message.reply_text("Failed to open wallet. Please try again later.")
+#         return
+
+#     # Get the address of wallet
+#     wallet_address = await get_address_wallet_rpc(user_id, user_password)
+#     if wallet_address:
+#         # Output main address
+#         await update.message.reply_text(f"Your main address:\n1. {wallet_address[0]}")
+
+#         # Output sub-addresses if presented:
+#         if len(wallet_address) > 1:
+#             sub_addresses = "\n".join(
+#                 [f"{i + 1}. {address}" for i, address in enumerate(wallet_address[1:], start=1)]
+#             )
+#             await update.message.reply_text(f"Your sub-addresses are the following:\n{sub_addresses}")
+#     else:
+#         await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")    
+#     # if wallet_address:
+#     #     await update.message.reply_text(f"Your wallet (main) address: {wallet_address}")
+#     # else:
+#     #     await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")
 
 async def balance_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text(f"Balance_check happened")

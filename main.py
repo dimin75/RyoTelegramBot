@@ -28,7 +28,11 @@ from telegram.ext import Application
 from config import TELEGRAM_BOT_TOKEN
 from rpc import start_wallet_rpc, is_wallet_running
 from handlers import cvh_handle_delete, delete_wallet_password, cvh_restore_wallet
-from handlers import balance_check, send_address, proc_wallet_bh, address_info
+from handlers import (
+    balance_check, send_address, 
+    proc_wallet_bh, address_info, 
+    check_address
+    )
 
 
 logger = setup_logging()
@@ -57,6 +61,7 @@ def main() -> None:
             CommandHandler("create_wallet", cvh_new_wallet),
             CommandHandler("delete_wallet", cvh_handle_delete),
             CommandHandler("restore_wallet", cvh_restore_wallet),
+            CommandHandler("check_address", check_address),
             #CommandHandler("balance", cvh_check_balance),
             #CommandHandler("send", cvh_send_funds),
         ],
