@@ -83,6 +83,7 @@ def main() -> None:
                 #CommandHandler("address", address_info)
             ],
             ADDRESS_REQUEST: [
+                MessageHandler(filters.TEXT & ~filters.COMMAND, address_info),
                 CommandHandler("address", address_info),
             ],            
             BALANCE: [

@@ -205,6 +205,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         "/create_wallet - Create new wallet for payments in RYO",
         "/delete_wallet - Delete your active wallet completely",
         "/restore_wallet - Restore your RYO wallet from seed phrase",
+        "/check_address - Display RYO-address(es) of your wallet",
         "/balance - check balance of your wallet",
         "/send - send RYO coins to other wallet",
         "/test_base - display all user records located on server",
@@ -416,6 +417,7 @@ async def proc_wallet_bh(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 async def check_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     session = Session()
     user_id = update.message.from_user.id
+    logger.info(f"User {user_id} requested an adress checking")
 
    # Get user's wallet from the database
     user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
@@ -425,6 +427,7 @@ async def check_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         return ConversationHandler.END
 
     # Save wallet ID and database password in context for further steps
+    logger.info(f"Get user {user_id} password from database...")
     context.user_data["user_id"] = user_id
     context.user_data["db_password"] = user_wallet.user_psw
 
@@ -437,6 +440,8 @@ async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     user_password = update.message.text  # Get the password entered by the user
     db_password = context.user_data.get("db_password")
     user_id = context.user_data.get("user_id")
+    logger.info(f"User {user_id} entered adress_info point")
+
 
     if not db_password or not user_id:
         await update.message.reply_text("Failed to retrieve user data. Please try again.")
@@ -444,6 +449,8 @@ async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
     # Check if the entered password matches the stored password
     if user_password != db_password:
+        await update.message.reply_text(f"Provided password: {user_password}")
+        await update.message.reply_text(f"Database password: {db_password}")
         await update.message.reply_text("Invalid password. Please try again.")
         return ConversationHandler.END
 
@@ -470,6 +477,8 @@ async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
             await update.message.reply_text(f"Your sub-addresses are the following:\n{sub_addresses}")
     else:
         await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")
+
+    return ConversationHandler.END    
 
 # async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 #     user_id = context.user_data.get("user_id")
