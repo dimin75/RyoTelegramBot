@@ -44,6 +44,8 @@ from constants import (
     SEED_PROCESS, BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, BALANCE, SEND
     )
 
+from utilites import hash_password, verify_password
+
 logger = setup_logging()
 
 # Initialize the session factory
@@ -328,7 +330,7 @@ async def create_wallet_password(update: Update, context: ContextTypes.DEFAULT_T
             if wallet_created:
                 # Add info about wallet to database
                 wallet_name = f"{WALLET_DIR}/{rpc_user}_wallet"
-                add2db_wallet(session, user_id=rpc_user, user_psw=password_from_user, wallet_name=wallet_name)
+                add2db_wallet(session, user_id=rpc_user, user_psw=hash_password(password_from_user), wallet_name=wallet_name)
                 await update.message.reply_text("Wallet created successfully.")
             else:
                 await update.message.reply_text("Failed to create wallet.")    
@@ -416,7 +418,7 @@ async def proc_wallet_bh(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     success = await restore_wallet_via_rpc(user_id, seed_phrase, user_password, response)
     if success:
         session = Session()
-        add2db_wallet(session, user_id, user_password, f"{user_id}_wallet")
+        add2db_wallet(session, user_id, hash_password(user_password), f"{user_id}_wallet")
         await update.message.reply_text("Your wallet has been successfully restored and saved.")
         await update.message.reply_text("To see the address, please tap the /address key.")
         return ADDRESS_REQUEST
@@ -448,35 +450,40 @@ async def check_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     return ADDRESS_REQUEST
 
 async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    user_password = update.message.text  # Get the password entered by the user
+    user_pass = update.message.text  # Get the password entered by the user
+    rstrd_pass = context.user_data.get("user_password")
     db_password = context.user_data.get("db_password")
     user_id = context.user_data.get("user_id")
     logger.info(f"User {user_id} entered adress_info point")
-    await update.message.reply_text(f"Provided password: {user_password}")
+    if user_pass != "/address":
+        await update.message.reply_text(f"Provided password: {user_pass}")
+        await update.message.reply_text(f"Database hashed password: {db_password}")
 
+        rstrd_pass = user_pass
 
-    if not db_password or not user_id:
-        await update.message.reply_text("Failed to retrieve user data. Please try again.")
-        return ConversationHandler.END
+        if not db_password or not user_id:
+            await update.message.reply_text("Failed to retrieve user data. Please try again.")
+            return ConversationHandler.END
 
-    # Check if the entered password matches the stored password
-    if user_password != db_password:
-        await update.message.reply_text(f"Provided password: {user_password}")
-        await update.message.reply_text(f"Database password: {db_password}")
-        await update.message.reply_text("Invalid password. Please try again.")
-        return ConversationHandler.END
+        # Check if the entered password matches the stored password
+        # if user_password != db_password:
+        if  not verify_password(user_pass, db_password):
+            await update.message.reply_text(f"Provided password: {user_pass}")
+            await update.message.reply_text(f"Database password: {db_password}")
+            await update.message.reply_text("Invalid password. Please try again.")
+            return ConversationHandler.END
 
-    # Password is correct
-    await update.message.reply_text("Password accepted. Fetching your wallet address...")
+        # Password is correct
+        await update.message.reply_text("Password accepted. Fetching your wallet address...")
 
     # Open the wallet
-    wallet_opened = await open_wallet_rpc(user_id, user_password)
+    wallet_opened = await open_wallet_rpc(user_id, rstrd_pass)
     if not wallet_opened:
         await update.message.reply_text("Failed to open wallet. Please try again later.")
         return ConversationHandler.END
 
     # Get wallet addresses
-    wallet_addresses = await get_address_wallet_rpc(user_id, user_password)
+    wallet_addresses = await get_address_wallet_rpc(user_id, rstrd_pass)
     if wallet_addresses:
         # Output main address
         await update.message.reply_text(f"Your main address:\n1. {wallet_addresses[0]}")
@@ -662,7 +669,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             if wallet_created:
                 # Add info about wallet to database
                 wallet_name = f"{WALLET_DIR}/{rpc_user}_wallet"
-                add2db_wallet(session, user_id=rpc_user, user_psw=password_from_user, wallet_name=wallet_name)
+                add2db_wallet(session, user_id=rpc_user, user_psw=hash_password(password_from_user), wallet_name=wallet_name)
                 await update.message.reply_text("Wallet created successfully.")
             else:
                 await update.message.reply_text("Failed to create wallet.")
@@ -707,7 +714,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
             if success:
                 session = Session()
-                await add2db_wallet(session, user_id, password2, f"{user_id}_wallet")
+                await add2db_wallet(session, user_id, hash_password(password2), f"{user_id}_wallet")
                 await update.message.reply_text("Your wallet has been successfully restored and saved.")
             else:
                 await update.message.reply_text("Failed to restore wallet. Please check your seed phrase and try again.")

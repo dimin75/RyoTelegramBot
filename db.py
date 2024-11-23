@@ -37,7 +37,7 @@ class UserWallet(Base):
     __tablename__ = 'user_wallets'
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(String, unique=True, nullable=False)  # Telegram User ID
-    user_psw = Column(String, nullable=False)
+    user_psw = Column(String(60), nullable=False)
     wallet_name = Column(String, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
     # address = Column(String, nullable=False)

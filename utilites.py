@@ -12,9 +12,19 @@
 
 #     Utility functions like delete_message, validate_password.
 
-from config import setup_logging
+from logger import setup_logging
+import bcrypt
 
 logger = setup_logging()
+
+def hash_password(password: str) -> str:
+    # Salt and hash generation
+    salt = bcrypt.gensalt()
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
+    return hashed_password.decode('utf-8')  # store password as string
+
+def verify_password(password: str, hashed_password: str) -> bool:
+    return bcrypt.checkpw(password.encode('utf-8'), hashed_password.encode('utf-8'))
 
 async def validate_password(password):
     logger.debug("Validating password")
