@@ -281,6 +281,17 @@ async def test_base(update: Update, context: CallbackContext) -> None:
     
     session.close()
 
+async def cvh_check_balance(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    user_id = update.message.from_user.id
+    logger.info(f"User {user_id} requested a balance checking")
+    await update.message.reply_text("Please enter a password for wallet balance checking:")
+    return BALANCE
+
+async def cvh_send_funds(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    user_id = update.message.from_user.id
+    logger.info(f"User {user_id} requested a balance checking")
+    await update.message.reply_text("Please enter a password for funds sending:")
+    return SEND
 
 async def cvh_new_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     user_id = update.message.from_user.id
@@ -441,6 +452,7 @@ async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     db_password = context.user_data.get("db_password")
     user_id = context.user_data.get("user_id")
     logger.info(f"User {user_id} entered adress_info point")
+    await update.message.reply_text(f"Provided password: {user_password}")
 
 
     if not db_password or not user_id:

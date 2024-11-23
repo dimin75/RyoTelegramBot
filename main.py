@@ -31,7 +31,8 @@ from handlers import cvh_handle_delete, delete_wallet_password, cvh_restore_wall
 from handlers import (
     balance_check, send_address, 
     proc_wallet_bh, address_info, 
-    check_address
+    check_address, cvh_check_balance,
+    cvh_send_funds
     )
 
 
@@ -62,8 +63,8 @@ def main() -> None:
             CommandHandler("delete_wallet", cvh_handle_delete),
             CommandHandler("restore_wallet", cvh_restore_wallet),
             CommandHandler("check_address", check_address),
-            #CommandHandler("balance", cvh_check_balance),
-            #CommandHandler("send", cvh_send_funds),
+            CommandHandler("balance", cvh_check_balance),
+            CommandHandler("send", cvh_send_funds),
         ],
         states={
             CREATE_WALLET: [
