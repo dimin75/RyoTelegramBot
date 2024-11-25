@@ -179,11 +179,14 @@ async def close_wallet_rpc(rpc_user, password):
         await asyncio.sleep(1)  
         result = response_close.json()
         logger.info(f"result of wallet closing: {result}")
-    except:        
+        return True
+    except Exception as e:
+       logger.error(f"Exception during wallet closing: {str(e)}")
        print(f"Error parsing JSON response: {response_close.text}")
+       return False
 
-    if 'error' in result:
-        logger.info(f"Error closing wallet: {result['error']['message']}")
+    # if 'error' in result:
+    #     logger.info(f"Error closing wallet: {result['error']['message']}")
 
 
 async def get_address_wallet_rpc(rpc_user, rpc_password):
@@ -240,11 +243,21 @@ async def get_balance_wallet_rpc(rpc_user, rpc_password):
         await asyncio.sleep(1)  
         result = response_balance.json()
         logger.info(f"result of wallet balance request: {result}")        
-    except:    
+    except ValueError:    
       print(f"Error parsing JSON response: {response_balance.text}")
+      return "Error", response_balance.text
 
     if 'error' in result:
+        #await update.message.reply_text(f"Error getting balance: {result['error']['message']}")
         logger.info(f"Error of wallet balance request: {result['error']['message']}")
+        return "Error", result['error']['message']
+    else:
+        balance = result.get('result', {}).get('balance')
+        unlocked_balance = result.get('result', {}).get('unlocked_balance')
+        return balance, unlocked_balance
+    
+
+
 
 
 async def wallet_exists(wallet_path):

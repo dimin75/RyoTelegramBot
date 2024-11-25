@@ -26,7 +26,11 @@ from wallet import WalletManager
 from logger import setup_logging
 from config import RPC_URL
 from db import init_db, UserWallet, add2db_wallet
-from rpc import create_wallet_via_rpc, restore_wallet_via_rpc, open_wallet_rpc, get_address_wallet_rpc
+from rpc import (
+    create_wallet_via_rpc, restore_wallet_via_rpc, 
+    open_wallet_rpc, get_address_wallet_rpc,
+    close_wallet_rpc, get_balance_wallet_rpc
+    )
 
 import asyncio
 import requests
@@ -284,9 +288,24 @@ async def test_base(update: Update, context: CallbackContext) -> None:
     session.close()
 
 async def cvh_check_balance(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    session = Session()
     user_id = update.message.from_user.id
     logger.info(f"User {user_id} requested a balance checking")
+
+   # Get user's wallet from the database
+    user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
+    if not user_wallet:
+        await update.message.reply_text("You don't have a wallet yet. Use /create_wallet to create one.")
+        session.close()
+        return ConversationHandler.END
+
+    # Save wallet ID and database password in context for further steps
+    logger.info(f"Get user {user_id} password from database...")
+    context.user_data["user_id"] = user_id
+    context.user_data["db_password"] = user_wallet.user_psw
+
     await update.message.reply_text("Please enter a password for wallet balance checking:")
+    session.close()    
     return BALANCE
 
 async def cvh_send_funds(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -497,41 +516,64 @@ async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     else:
         await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")
 
+    wallet_closed = await close_wallet_rpc(user_id, rstrd_pass)
+    if wallet_closed:
+        await update.message.reply_text("Wallet closed.")
+    else:
+        await update.message.reply_text("Some problem appeared during the wallet closing...")
+
+
     return ConversationHandler.END    
 
-# async def address_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-#     user_id = context.user_data.get("user_id")
-#     user_password = context.user_data.get("user_password")
-#     logger.info(f"Action address request started...")
-#     await update.message.reply_text("your address request can take a time, wait please...")
-    
-#     # Open the wallet
-#     wallet_opened = await open_wallet_rpc(user_id, user_password)
-#     if not wallet_opened:
-#         await update.message.reply_text("Failed to open wallet. Please try again later.")
-#         return
-
-#     # Get the address of wallet
-#     wallet_address = await get_address_wallet_rpc(user_id, user_password)
-#     if wallet_address:
-#         # Output main address
-#         await update.message.reply_text(f"Your main address:\n1. {wallet_address[0]}")
-
-#         # Output sub-addresses if presented:
-#         if len(wallet_address) > 1:
-#             sub_addresses = "\n".join(
-#                 [f"{i + 1}. {address}" for i, address in enumerate(wallet_address[1:], start=1)]
-#             )
-#             await update.message.reply_text(f"Your sub-addresses are the following:\n{sub_addresses}")
-#     else:
-#         await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")    
-#     # if wallet_address:
-#     #     await update.message.reply_text(f"Your wallet (main) address: {wallet_address}")
-#     # else:
-#     #     await update.message.reply_text("Failed to retrieve wallet address. Please try again later.")
-
 async def balance_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    await update.message.reply_text(f"Balance_check happened")
+    # await update.message.reply_text(f"Balance_check happened")
+    user_pass = update.message.text  # Get the password entered by the user
+    # rstrd_pass = context.user_data.get("user_password")
+    db_password = context.user_data.get("db_password")
+    user_id = context.user_data.get("user_id")
+    logger.info(f"User {user_id} entered BALANCE point")
+    await update.message.reply_text(f"Provided password: {user_pass}")
+    await update.message.reply_text(f"Database hashed password: {db_password}")
+    if  not verify_password(user_pass, db_password):
+        await update.message.reply_text(f"Provided password: {user_pass}")
+        await update.message.reply_text(f"Database password: {db_password}")
+        await update.message.reply_text("Invalid password. Please try again.")
+        return ConversationHandler.END
+
+        # Password is correct
+    
+    await update.message.reply_text("Password accepted. Fetching your wallet balance...")
+
+    # Open the wallet
+    wallet_opened = await open_wallet_rpc(user_id, user_pass)
+    if not wallet_opened:
+        await update.message.reply_text("Failed to open wallet. Please try again later.")
+        return ConversationHandler.END
+
+    # Get wallet balance
+    wallet_balance = await get_balance_wallet_rpc(user_id, user_pass)
+    if wallet_balance[0] == "Error":
+        await update.message.reply_text(f"Error fetching balance: {wallet_balance[1]}")
+    else:
+        balance, unlocked_balance = wallet_balance
+        await update.message.reply_text(
+            f"Wallet Balance: {balance / 1e12:.2f} RYO\n"
+            f"Unlocked Balance: {unlocked_balance / 1e12:.2f} RYO"
+        )    
+
+    wallet_closed = await close_wallet_rpc(user_id, user_pass)
+    if wallet_closed:
+        await update.message.reply_text("Wallet closed.")
+    else:
+        await update.message.reply_text("Some problem appeared during the wallet closing...")
+
+    # if wallet_balance:
+    #    # to do -  correctly write await update.message for returned balance, unlocked_balance
+    #    pass
+    # else:
+    #   # to do -  correctly write await update.message for obtained errors from rpc.py  
+    #   pass
+
     return ConversationHandler.END
 
 async def send_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
