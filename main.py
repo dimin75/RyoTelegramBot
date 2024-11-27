@@ -11,7 +11,8 @@
 from constants import (
     CREATE_WALLET, DELETE_WALLET, 
     RESTORE_WALLET, SEED_PROCESS, 
-    BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, BALANCE, SEND
+    BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, 
+    BALANCE, SEND, SEED_REQUEST
     )
 #CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, BALANCE, SEND = range(5)
 
@@ -27,7 +28,10 @@ from telegram.ext import Application
 #, ApplicationBuilder
 from config import TELEGRAM_BOT_TOKEN
 from rpc import start_wallet_rpc, is_wallet_running
-from handlers import cvh_handle_delete, delete_wallet_password, cvh_restore_wallet
+from handlers import (
+    cvh_handle_delete, delete_wallet_password, 
+    cvh_restore_wallet, req_seed, get_seed_psw
+    )
 from handlers import (
     balance_check, send_address, 
     proc_wallet_bh, address_info, 
@@ -65,6 +69,7 @@ def main() -> None:
             CommandHandler("check_address", check_address),
             CommandHandler("balance", cvh_check_balance),
             CommandHandler("send", cvh_send_funds),
+            CommandHandler("seed_request", req_seed),
         ],
         states={
             CREATE_WALLET: [
@@ -86,7 +91,10 @@ def main() -> None:
             ADDRESS_REQUEST: [
                 MessageHandler(filters.TEXT & ~filters.COMMAND, address_info),
                 CommandHandler("address", address_info),
-            ],            
+            ],
+            SEED_REQUEST: [
+                MessageHandler(filters.TEXT, get_seed_psw),
+            ],
             BALANCE: [
                 MessageHandler(filters.TEXT, balance_check),
             ],

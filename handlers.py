@@ -29,7 +29,8 @@ from db import init_db, UserWallet, add2db_wallet
 from rpc import (
     create_wallet_via_rpc, restore_wallet_via_rpc, 
     open_wallet_rpc, get_address_wallet_rpc,
-    close_wallet_rpc, get_balance_wallet_rpc
+    close_wallet_rpc, get_balance_wallet_rpc,
+    get_seed_mnemonic_rpc
     )
 
 import asyncio
@@ -45,7 +46,8 @@ from rpc import delete_wallet_files
 from db import delete_user_wallet_record
 from constants import (
     CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, 
-    SEED_PROCESS, BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, BALANCE, SEND
+    SEED_PROCESS, BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, 
+    BALANCE, SEND, SEED_REQUEST
     )
 
 from utilites import hash_password, verify_password
@@ -215,7 +217,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         "/balance - check balance of your wallet",
         "/send - send RYO coins to other wallet",
         "/test_base - display all user records located on server",
-        "/ryo_rates - check current exchange rated for RYO coin"
+        "/ryo_rates - check current exchange rated for RYO coin",
+        "/seed_request - request you seed-phrase from wallet to save it in secure place"
 
     ]
     ryo_usd_price = RYO_BTC_RATE * BTC_USD_RATE
@@ -357,22 +360,35 @@ async def create_wallet_password(update: Update, context: ContextTypes.DEFAULT_T
     return ConversationHandler.END
 
 async def cvh_handle_delete(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    await update.message.reply_text("Are you sure to delete wallet? This action can't be undone.\n Type 'yes' to confirm.")
+    session = Session()
+    #await update.message.reply_text("Are you sure to delete wallet? This action can't be undone.\n Type 'yes' to confirm.")
+    await update.message.reply_text("Are you sure to delete wallet? This action can't be undone.\n Type 'no' if you are not sure.")
     user_id = update.message.from_user.id
     logger.info(f"User {user_id} requested a wallet deletion")
-    context.user_data['user_id'] = user_id    
+    context.user_data['user_id'] = user_id
+    # Get user's wallet from the database
+    user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
+    if not user_wallet:
+        await update.message.reply_text("You don't have a wallet yet. Use /create_wallet to create one.")
+        session.close()
+        return ConversationHandler.END
+    
+    context.user_data["db_password"] = user_wallet.user_psw
+
+    await update.message.reply_text("Please enter a password for your existing wallet:")
+    session.close()
     return DELETE_WALLET
 
 async def delete_wallet_password(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    response = update.message.text.lower()
-    # if response == "yes":
-    #     delete_wallet(update.message.from_user.id)
-    #     await update.message.reply_text("Wallet deleted successfully.")
-    # else:
-    #     await update.message.reply_text("Wallet deletion cancelled.")
+    #response = update.message.text.lower()
+    response = update.message.text
     user_id = context.user_data.get('user_id')
     wallet_name = f"{user_id}_wallet"  # wallet file name
-    if response == "yes":
+    db_password = context.user_data.get("db_password")
+
+    if  verify_password(response, db_password):
+    #if response == "yes":
+        await update.message.reply_text("Password accepted. Now delete wallet...")
         await delete_wallet_files(wallet_name)  # file deletion
         Session = init_db()
         with Session() as session:
@@ -445,6 +461,58 @@ async def proc_wallet_bh(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         await update.message.reply_text("Failed to restore wallet. Please check your seed phrase and try again.")
     #return BLOCKHEIGHT_TAKE 
         return ConversationHandler.END
+
+async def req_seed(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    session = Session()
+    user_id = update.message.from_user.id
+    logger.info(f"User {user_id} requested his seed checking")
+
+   # Get user's wallet from the database
+    user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
+    if not user_wallet:
+        await update.message.reply_text("You don't have a wallet yet. Use /create_wallet to create one.")
+        session.close()
+        return ConversationHandler.END
+
+    # Save wallet ID and database password in context for further steps
+    logger.info(f"Get user {user_id} password from database...")
+    context.user_data["user_id"] = user_id
+    context.user_data["db_password"] = user_wallet.user_psw
+
+    # Ask password from user for the wallet password
+    await update.message.reply_text("Please enter your wallet password to see your seed:")
+    session.close()
+    return SEED_REQUEST
+
+async def get_seed_psw(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None: 
+    response = update.message.text
+    user_id = context.user_data.get('user_id')
+    db_password = context.user_data.get("db_password")
+
+    if  not verify_password(response, db_password):
+        await update.message.reply_text("Wallet seed request unsuccessful.")      
+
+    await update.message.reply_text("Password accepted. Now check your seed...")
+
+    # Open the wallet
+    wallet_opened = await open_wallet_rpc(user_id, response)
+    if not wallet_opened:
+        await update.message.reply_text("Failed to open wallet. Please try again later.")
+        return ConversationHandler.END
+
+    wallet_seed = await get_seed_mnemonic_rpc(user_id, response)  # getting the wallet seed
+    if wallet_seed:
+        await update.message.reply_text("Your seed is:")
+        await update.message.reply_text(wallet_seed)
+
+
+    wallet_closed = await close_wallet_rpc(user_id, response)
+    if wallet_closed:
+        await update.message.reply_text("Wallet closed.")
+    else:
+        await update.message.reply_text("Some problem appeared during the wallet closing...")
+
+    return ConversationHandler.END   
 
 async def check_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     session = Session()

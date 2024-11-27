@@ -188,6 +188,41 @@ async def close_wallet_rpc(rpc_user, password):
     # if 'error' in result:
     #     logger.info(f"Error closing wallet: {result['error']['message']}")
 
+async def get_seed_mnemonic_rpc(rpc_user, rpc_password):
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    data_addr = {
+        "jsonrpc": "2.0",
+        "id": "0",
+        "method": "query_key",
+        "params": {
+          "key_type": "mnemonic"
+        }
+    }
+    try:
+        logger.info(f"Request of wallet seed mnemonic for: {rpc_user}")
+        response_address = requests.post(url, json=data_addr, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        await asyncio.sleep(1)  
+        result = response_address.json()
+        logger.info(f"result of wallet address requesting: {result}")     
+        if 'error' in result:
+            logger.error(f"Error requesting wallet address: {result['error']['message']}")
+            return None
+        # Return first address in list
+        # return result["result"]["addresses"][0]["address"]
+        # Extract and return all addresses in the list
+        seed = result.get('result', {}).get('key')
+        return seed
+        # addresses = [addr["address"] for addr in result["result"]["addresses"]]
+        # return addresses        
+    except Exception as e:    
+      logger.error(f"Exception during address request: {str(e)}")
+      print(f"Error parsing JSON response: {response_address.text}")
+      return None
+
+    if 'error' in result:
+        logger.info(f"Error wallet address requesting: {result['error']['message']}")
 
 async def get_address_wallet_rpc(rpc_user, rpc_password):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
@@ -216,6 +251,8 @@ async def get_address_wallet_rpc(rpc_user, rpc_password):
         # Extract and return all addresses in the list
         addresses = [addr["address"] for addr in result["result"]["addresses"]]
         return addresses        
+        # seed = result.get('result', {}).get('key')
+        # return seed
     except Exception as e:    
       logger.error(f"Exception during address request: {str(e)}")
       print(f"Error parsing JSON response: {response_address.text}")
