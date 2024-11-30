@@ -47,7 +47,7 @@ from db import delete_user_wallet_record
 from constants import (
     CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, 
     SEED_PROCESS, BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, 
-    BALANCE, SEND, SEED_REQUEST
+    BALANCE, SEND_ADDR, SEND_SUM, SEND_TRANSFER, SEED_REQUEST
     )
 
 from utilites import hash_password, verify_password
@@ -313,9 +313,23 @@ async def cvh_check_balance(update: Update, context: ContextTypes.DEFAULT_TYPE) 
 
 async def cvh_send_funds(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     user_id = update.message.from_user.id
-    logger.info(f"User {user_id} requested a balance checking")
+    logger.info(f"User {user_id} requested a funds transfer...")
     await update.message.reply_text("Please enter a password for funds sending:")
-    return SEND
+    return SEND_ADDR
+
+async def send_address_input(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.message.reply_text(f"Password correct. Please input_address 2 send")
+    return SEND_SUM
+
+async def send_ryo_sum(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.message.reply_text(f"Please input sum to send.")
+    await update.message.reply_text(f"Your balance is following:")
+    return SEND_TRANSFER
+
+async def send_ryo_confirm(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.message.reply_text(f"Type 'yes' if you agree to send those one.")
+    await update.message.reply_text(f"Use /pay_id if you need to add payment.ID to your address")
+    return ConversationHandler.END
 
 async def cvh_new_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     user_id = update.message.from_user.id
@@ -635,17 +649,6 @@ async def balance_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> i
     else:
         await update.message.reply_text("Some problem appeared during the wallet closing...")
 
-    # if wallet_balance:
-    #    # to do -  correctly write await update.message for returned balance, unlocked_balance
-    #    pass
-    # else:
-    #   # to do -  correctly write await update.message for obtained errors from rpc.py  
-    #   pass
-
-    return ConversationHandler.END
-
-async def send_address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    await update.message.reply_text(f"Send_address happened")
     return ConversationHandler.END
 
 

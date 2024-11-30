@@ -12,7 +12,7 @@ from constants import (
     CREATE_WALLET, DELETE_WALLET, 
     RESTORE_WALLET, SEED_PROCESS, 
     BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, 
-    BALANCE, SEND, SEED_REQUEST
+    BALANCE, SEND_ADDR, SEND_SUM, SEND_TRANSFER, SEED_REQUEST
     )
 #CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, BALANCE, SEND = range(5)
 
@@ -33,10 +33,10 @@ from handlers import (
     cvh_restore_wallet, req_seed, get_seed_psw
     )
 from handlers import (
-    balance_check, send_address, 
+    balance_check, send_address_input, 
     proc_wallet_bh, address_info, 
     check_address, cvh_check_balance,
-    cvh_send_funds
+    cvh_send_funds, send_ryo_sum, send_ryo_confirm
     )
 
 
@@ -98,8 +98,14 @@ def main() -> None:
             BALANCE: [
                 MessageHandler(filters.TEXT, balance_check),
             ],
-            SEND: [
-                MessageHandler(filters.TEXT, send_address),
+            SEND_ADDR: [
+                MessageHandler(filters.TEXT, send_address_input),
+            ],
+            SEND_SUM: [
+                MessageHandler(filters.TEXT, send_ryo_sum),
+            ],
+            SEND_TRANSFER: [
+                MessageHandler(filters.TEXT, send_ryo_confirm),
             ]
         },
         fallbacks=[CommandHandler("cancel", start)]
