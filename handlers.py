@@ -47,7 +47,8 @@ from db import delete_user_wallet_record
 from constants import (
     CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, 
     SEED_PROCESS, BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, 
-    BALANCE, SEND_ADDR, SEND_SUM, SEND_TRANSFER, SEED_REQUEST
+    BALANCE, SEND_ADDR, SEND_SUM, SEND_TRANSFER, SEED_REQUEST,
+    MAKE_SEND_TRANSACTION
     )
 
 from utilites import hash_password, verify_password
@@ -312,23 +313,100 @@ async def cvh_check_balance(update: Update, context: ContextTypes.DEFAULT_TYPE) 
     return BALANCE
 
 async def cvh_send_funds(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    session = Session()
     user_id = update.message.from_user.id
     logger.info(f"User {user_id} requested a funds transfer...")
+
+   # Get user's wallet from the database
+    user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
+    if not user_wallet:
+        await update.message.reply_text("You don't have a wallet yet. Use /create_wallet to create one.")
+        session.close()
+        return ConversationHandler.END
+
+    # Save wallet ID and database password in context for further steps
+    logger.info(f"Get user {user_id} password from database...")
+    context.user_data["user_id"] = user_id
+    context.user_data["db_password"] = user_wallet.user_psw
+
     await update.message.reply_text("Please enter a password for funds sending:")
+    session.close()
     return SEND_ADDR
 
 async def send_address_input(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    await update.message.reply_text(f"Password correct. Please input_address 2 send")
+    user_pass = update.message.text  # Get the password entered by the user
+    # rstrd_pass = context.user_data.get("user_password")
+    db_password = context.user_data.get("db_password")
+    user_id = context.user_data.get("user_id")
+    logger.info(f"User {user_id} entered BALANCE point")
+    await update.message.reply_text(f"Provided password: {user_pass}")
+    await update.message.reply_text(f"Database hashed password: {db_password}")
+    if  not verify_password(user_pass, db_password):
+        await update.message.reply_text(f"Provided password: {user_pass}")
+        await update.message.reply_text(f"Database password: {db_password}")
+        await update.message.reply_text("Invalid password. Please try again.")
+        return ConversationHandler.END
+
+        # Password is correct
+
+    context.user_data["user_pass"] = user_pass
+    await update.message.reply_text("Password accepted. Please input ryo-address to send coins...:")
+    # await update.message.reply_text(f"Password correct. Please input_address 2 send")
     return SEND_SUM
 
 async def send_ryo_sum(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    send_ryo_address = update.message.text
+    context.user_data["send_ryo_address"] = send_ryo_address
+    await update.message.reply_text("Fetching your wallet balance...")
+    user_id = context.user_data.get("user_id")
+    user_pass = context.user_data.get("user_pass")
+    # Open the wallet
+    wallet_opened = await open_wallet_rpc(user_id, user_pass)
+    if not wallet_opened:
+        await update.message.reply_text("Failed to open wallet. Please try again later.")
+        return ConversationHandler.END
+
+    # Get wallet balance
+    wallet_balance = await get_balance_wallet_rpc(user_id, user_pass)
+    context.user_data["spent_balance"] = "0"
+    if wallet_balance[0] == "Error":
+        await update.message.reply_text(f"Error fetching balance: {wallet_balance[1]}")
+    else:
+        balance, unlocked_balance = wallet_balance
+        await update.message.reply_text(
+            f"Wallet Balance: {balance / 1e12:.2f} RYO\n"
+            f"Unlocked Balance: {unlocked_balance / 1e12:.2f} RYO"
+        )
+        context.user_data["spent_balance"] = balance
+
+    wallet_closed = await close_wallet_rpc(user_id, user_pass)
+    if wallet_closed:
+        await update.message.reply_text("Wallet closed.")
+    else:
+        await update.message.reply_text("Some problem appeared during the wallet closing...")
+
+
     await update.message.reply_text(f"Please input sum to send.")
-    await update.message.reply_text(f"Your balance is following:")
+    #await update.message.reply_text(f"Your balance is following:")
     return SEND_TRANSFER
 
 async def send_ryo_confirm(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    sum_ryo_send = update.message.text
+    context.user_data["sum_ryo_send"] = sum_ryo_send
+    send_ryo_address = context.user_data.get("send_ryo_address")
+    await update.message.reply_text(f"Now check the data transaction:")
+    await update.message.reply_text(f"Send to {send_ryo_address} amount of {sum_ryo_send} Ryo coins. ")
     await update.message.reply_text(f"Type 'yes' if you agree to send those one.")
-    await update.message.reply_text(f"Use /pay_id if you need to add payment.ID to your address")
+    await update.message.reply_text(f"Use /pay_id if you need to add payment_ID to your address")
+    return MAKE_SEND_TRANSACTION
+
+async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    send_action = update.message.text.lower()
+    await update.message.reply_text(f"Okay. You replied with {send_action}")
+    if send_action == 'yes':
+        await update.message.reply_text(f"Will send your money as you requested...")
+    if send_action == '/pay_id':
+        await update.message.reply_text(f"Enter your payment id:")
     return ConversationHandler.END
 
 async def cvh_new_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
