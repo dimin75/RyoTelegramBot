@@ -38,6 +38,10 @@ jobs:
           cd $REPO_NAME
           echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" > .env
 
+          #Clean up old docker images:
+          docker stop ryo-tg-bot || true
+          docker rm ryo-tg-bot || true          
+
           # Создание Docker образа из Dockerfile в репозитории
           docker build --no-cache -t ryo-tg-ci-cd:ubuntu-22.04 .
 
