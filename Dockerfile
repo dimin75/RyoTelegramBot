@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Копируем исходный код бота в контейнер
-COPY . /app
+COPY . .
 
 
 # Копируем файл .env
