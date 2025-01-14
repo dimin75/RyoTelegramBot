@@ -42,4 +42,4 @@ jobs:
           docker build --no-cache -t ryo-tg-ci-cd:ubuntu-22.04 .
 
           # Запуск контейнера из только что созданного образа
-          docker run ryo-tg-ci-cd:ubuntu-22.04
+          docker run -d --name ryo-tg-bot -v /home/ryo/logs:/app/logs ryo-tg-ci-cd:ubuntu-22.04 
