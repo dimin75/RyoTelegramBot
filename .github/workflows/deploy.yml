@@ -18,7 +18,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        password: ${{ secrets.HOST_PASS }}
         script: |
           # Создание директории на удаленном сервере, если ее нет
           mkdir -p /opt/ryotgbotproj
