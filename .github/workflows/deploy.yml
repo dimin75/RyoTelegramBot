@@ -1,0 +1,45 @@
+name: Deploy to Remote Server Telegram bot my-host.hk
+
+on:
+  push:
+    branches:
+      - conversation-handler
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Execute script on remote server
+      uses: appleboy/ssh-action@v0.1.2
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        script: |
+          # Создание директории на удаленном сервере, если ее нет
+          mkdir -p /opt/ryotgbotproj
+
+          # Переход в эту директорию
+          cd /opt/ryotgbotproj
+
+          # Удаление всех файлов и папок в директории (если они существуют)
+          rm -rf ./*
+
+          # Клонирование репозитория на удаленный сервер
+          git clone https://github.com/${{ github.repository }}
+
+          REPO_NAME=$(basename ${{ github.repository }})
+          print "Repository name: $REPO_NAME"
+
+          cd $REPO_NAME
+          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" > .env
+
+          # Создание Docker образа из Dockerfile в репозитории
+          docker build --no-cache -t ryo-tg-ci-cd:ubuntu-22.04 .
+
+          # Запуск контейнера из только что созданного образа
+          docker run ryo-tg-ci-cd:ubuntu-22.04
