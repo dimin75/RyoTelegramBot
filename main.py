@@ -13,7 +13,7 @@ from constants import (
     RESTORE_WALLET, SEED_PROCESS, 
     BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, 
     BALANCE, SEND_ADDR, SEND_SUM, SEND_TRANSFER, SEED_REQUEST,
-    MAKE_SEND_TRANSACTION
+    MAKE_SEND_TRANSACTION, MAKE_SEND_TRANSACTION_PAY_ID
     )
 #CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, BALANCE, SEND = range(5)
 
@@ -38,7 +38,7 @@ from handlers import (
     proc_wallet_bh, address_info, 
     check_address, cvh_check_balance,
     cvh_send_funds, send_ryo_sum, send_ryo_confirm,
-    msend_trans
+    msend_trans, msend_trans_payid
     )
 
 
@@ -113,6 +113,10 @@ def main() -> None:
             MAKE_SEND_TRANSACTION: [
                  MessageHandler(filters.TEXT & ~filters.COMMAND, msend_trans),
                  CommandHandler("pay_id", msend_trans)
+            ],
+            MAKE_SEND_TRANSACTION_PAY_ID: [
+                 MessageHandler(filters.TEXT & ~filters.COMMAND, msend_trans_payid),
+                 #CommandHandler("pay_id", msend_trans)
             ]
         },
         fallbacks=[CommandHandler("cancel", start)]

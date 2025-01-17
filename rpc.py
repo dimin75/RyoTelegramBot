@@ -47,16 +47,6 @@ async def create_wallet_via_rpc(rpc_user, password):
         }
     }
 
-    # async with aiohttp.ClientSession() as session:
-    #     async with session.post(loc_rpc_url, json=payload) as response:
-    #         if response.status == 200:
-    #             result = await response.json()
-    #             if result.get("result") == {}:  # Check for empty result
-    #                 # Check, if the wallet created
-    #                 if await wallet_exists(wallet_path):
-    #                     return True  # Creation succes
-    # return False  # Wallet was not created
-
     async with aiohttp.ClientSession() as session:
         async with session.post(loc_rpc_url, json=payload) as response:
             if response.status == 200:

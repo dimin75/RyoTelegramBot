@@ -48,7 +48,7 @@ from constants import (
     CREATE_WALLET, DELETE_WALLET, RESTORE_WALLET, 
     SEED_PROCESS, BLOCKHEIGHT_TAKE, ADDRESS_REQUEST, 
     BALANCE, SEND_ADDR, SEND_SUM, SEND_TRANSFER, SEED_REQUEST,
-    MAKE_SEND_TRANSACTION
+    MAKE_SEND_TRANSACTION, MAKE_SEND_TRANSACTION_PAY_ID
     )
 
 from utilites import hash_password, verify_password
@@ -407,6 +407,12 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
         await update.message.reply_text(f"Will send your money as you requested...")
     if send_action == '/pay_id':
         await update.message.reply_text(f"Enter your payment id:")
+        return MAKE_SEND_TRANSACTION_PAY_ID
+    return ConversationHandler.END
+
+async def msend_trans_payid(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    pay_id = update.message.text.lower()
+    await update.message.reply_text(f"payment_ID for this transaction: {pay_id}")
     return ConversationHandler.END
 
 async def cvh_new_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
