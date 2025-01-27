@@ -8,6 +8,8 @@
 # register them to the bot.
 # Start polling.
 # Define conversation states
+import sys
+
 from constants import (
     CREATE_WALLET, DELETE_WALLET, 
     RESTORE_WALLET, SEED_PROCESS, 
@@ -27,7 +29,7 @@ from db import init_db
 from logger import setup_logging
 from telegram.ext import Application
 #, ApplicationBuilder
-from config import TELEGRAM_BOT_TOKEN
+from config import TELEGRAM_BOT_TOKEN, LOG_CONSOLE_FILE
 from rpc import start_wallet_rpc, is_wallet_running
 from handlers import (
     cvh_handle_delete, delete_wallet_password, 
@@ -55,6 +57,10 @@ def main() -> None:
     # Check if wallet server is running and start it if necessary
     if not is_wallet_running():
         start_wallet_rpc()
+
+    with open(LOG_CONSOLE_FILE, "a") as log_file:
+        sys.stdout = log_file
+        sys.stderr = log_file
 
     # Create the Updater and pass it your bot's token.
     application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()

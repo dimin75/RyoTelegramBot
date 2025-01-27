@@ -25,6 +25,7 @@ WALLET_DIR = "testwall"
 LOG_DIR = "logs"
 LOG_FILE = f"{LOG_DIR}/bot.log"
 LOG_LEVEL = "DEBUG"
+LOG_CONSOLE_FILE = f"/console.log"
 
 #Currency default rates
 RYO_BTC_RATE = 0.00000021
