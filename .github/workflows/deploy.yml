@@ -53,6 +53,7 @@ jobs:
           # Запуск контейнера из только что созданного образа
           #docker run -d --name ryo-tg-bot -v /home/ryo/logs:/app/logs ryo-tg-ci-cd:ubuntu-22.04
           docker run -d --name ryo-tg-bot --network="host" \
+            --log-driver json-file --log-opt max-size=10m \
             -v /home/ryo/logs:/app/logs \
             -v /home/ryo/data:/app/data \
             -v /home/ryo/data/testwall:/app/testwall \

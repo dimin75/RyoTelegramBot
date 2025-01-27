@@ -8,7 +8,7 @@
 # register them to the bot.
 # Start polling.
 # Define conversation states
-import sys
+import logging
 
 from constants import (
     CREATE_WALLET, DELETE_WALLET, 
@@ -58,9 +58,9 @@ def main() -> None:
     if not is_wallet_running():
         start_wallet_rpc()
 
-    with open(LOG_CONSOLE_FILE, "a") as log_file:
-        sys.stdout = log_file
-        sys.stderr = log_file
+    #with open(LOG_CONSOLE_FILE, "a") as log_file:
+        #sys.stdout = log_file
+        #sys.stderr = log_file
 
     # Create the Updater and pass it your bot's token.
     application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()

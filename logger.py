@@ -1,11 +1,13 @@
 import logging, os
 from logging.handlers import TimedRotatingFileHandler
-from config import LOG_DIR, LOG_FILE
+from config import LOG_DIR, LOG_FILE, LOG_CONSOLE_FILE
 
 # Setup logging configuration
 def setup_logging():
     # log_file_path = os.path.join(LOG_DIR, LOG_FILE)
     log_file_path = os.path.join(os.getcwd(), LOG_DIR, LOG_FILE)
+    console_log_file_path = os.path.join(os.getcwd(), LOG_DIR, LOG_CONSOLE_FILE)
+
 
     # Check if directory exists
     # print("check directory presence...")
@@ -29,6 +31,9 @@ def setup_logging():
     file_handler.suffix = "%Y-%m-%d"
     file_handler.setLevel(logging.INFO)
 
+    console_file_handler = logging.FileHandler(console_log_file_path)
+    console_file_handler.setLevel(logging.DEBUG)
+
     # Console handler
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.DEBUG)
@@ -36,9 +41,11 @@ def setup_logging():
     # Formatter
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     file_handler.setFormatter(formatter)
+    console_file_handler.setFormatter(formatter)
     console_handler.setFormatter(formatter)
 
     logger.addHandler(file_handler)
+    logger.addHandler(console_file_handler)
     logger.addHandler(console_handler)
 
     return logger
