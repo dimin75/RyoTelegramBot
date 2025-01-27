@@ -19,7 +19,7 @@ RPC_TIMEOUT = 30
 # Database
 DATABASE_URL = "sqlite:///data/wallets.db"
 USER_DB_PATH = "data/users.db" 
-WALLET_DIR = "./testwall"
+WALLET_DIR = "testwall"
 
 # Logging
 LOG_DIR = "logs"

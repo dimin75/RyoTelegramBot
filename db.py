@@ -48,7 +48,15 @@ class UserWallet(Base):
 # Function to initialize the database (creates tables if they don't exist)
 def init_db():
     # Ensure that the directory for user database exists
-    if not os.path.exists(os.path.dirname(USER_DB_PATH)):
+    #if not os.path.exists(os.path.dirname(USER_DB_PATH)):
+        #os.makedirs(os.path.dirname(USER_DB_PATH))
+        #logger.info(f"Created directory for user database: {os.path.dirname(USER_DB_PATH)}")
+    #Docker volumes path to DB-checking:
+    if not os.path.exists(os.path.dirname(DATABASE_URL.replace("sqlite:///", ""))):
+        os.makedirs(os.path.dirname(DATABASE_URL.replace("sqlite:///", "")))
+        logger.info(f"Created directory for database: {os.path.dirname(DATABASE_URL.replace('sqlite:///', ''))}")
+
+    if not os.path.exists(USER_DB_PATH):
         os.makedirs(os.path.dirname(USER_DB_PATH))
         logger.info(f"Created directory for user database: {os.path.dirname(USER_DB_PATH)}")
     

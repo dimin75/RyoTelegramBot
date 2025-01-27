@@ -17,5 +17,8 @@ COPY . .
 # Копируем файл .env
 COPY .env /app/.env
 
+# Expose the main port (if applicable)
+EXPOSE 8000
+
 # Указываем команду запуска бота
 CMD ["python", "main.py"]

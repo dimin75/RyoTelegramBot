@@ -38,6 +38,11 @@ jobs:
           cd $REPO_NAME
           echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" > .env
 
+          # Create directories for logs, databases, and wallets on the server
+          mkdir -p /home/ryo/logs
+          mkdir -p /home/ryo/data
+          mkdir -p /home/ryo/data/testwall
+
           #Clean up old docker images:
           docker stop ryo-tg-bot || true
           docker rm ryo-tg-bot || true          
@@ -46,4 +51,9 @@ jobs:
           docker build --no-cache -t ryo-tg-ci-cd:ubuntu-22.04 .
 
           # Запуск контейнера из только что созданного образа
-          docker run -d --name ryo-tg-bot -v /home/ryo/logs:/app/logs ryo-tg-ci-cd:ubuntu-22.04 
+          #docker run -d --name ryo-tg-bot -v /home/ryo/logs:/app/logs ryo-tg-ci-cd:ubuntu-22.04
+          docker run -d --name ryo-tg-bot \
+            -v /home/ryo/logs:/app/logs \
+            -v /home/ryo/data:/app/data \
+            -v /home/ryo/data/testwall:/app/testwall \
+            ryo-tg-ci-cd:ubuntu-22.04
