@@ -26,7 +26,7 @@ LOG_DIR = "logs"
 LOG_FILE = f"{LOG_DIR}/bot.log"
 LOG_LEVEL = "DEBUG"
 LOG_CONSOLE_FILE = f"{LOG_DIR}/console.log"
-LOG_WALLET = = f"{LOG_DIR}/ryo-wallet-rpc.log"
+LOG_WALLET = f"{LOG_DIR}/ryo-wallet-rpc.log"
 
 #Currency default rates
 RYO_BTC_RATE = 0.00000021
