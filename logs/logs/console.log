@@ -1,0 +1,46 @@
+2025-01-28 00:06:51,733 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,733 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,733 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,733 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,733 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,744 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,744 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,744 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,744 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,744 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,745 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,745 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,745 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,745 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,745 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,745 - TelegramBot - INFO - Created directory for user database: data
+2025-01-28 00:06:51,746 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,746 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,746 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,746 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,746 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,746 - TelegramBot - INFO - Database initialized with all tables created.
+2025-01-28 00:06:51,748 - TelegramBot - WARNING - Wallet server is not running.
+2025-01-28 00:06:51,748 - TelegramBot - WARNING - Wallet server is not running.
+2025-01-28 00:06:51,748 - TelegramBot - WARNING - Wallet server is not running.
+2025-01-28 00:06:51,748 - TelegramBot - WARNING - Wallet server is not running.
+2025-01-28 00:06:51,748 - TelegramBot - WARNING - Wallet server is not running.
+2025-01-28 00:06:51,748 - TelegramBot - WARNING - Wallet server is not running.
+2025-01-28 00:06:51,748 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir testwall
+2025-01-28 00:06:51,748 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir testwall
+2025-01-28 00:06:51,748 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir testwall
+2025-01-28 00:06:51,748 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir testwall
+2025-01-28 00:06:51,748 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir testwall
+2025-01-28 00:06:51,748 - TelegramBot - INFO - Starting wallet server with command: ./ryo-wallet-rpc --rpc-bind-port 18082 --disable-rpc-login --wallet-dir testwall
+2025-01-28 00:06:51,749 - TelegramBot - INFO - Wallet server started.
+2025-01-28 00:06:51,749 - TelegramBot - INFO - Wallet server started.
+2025-01-28 00:06:51,749 - TelegramBot - INFO - Wallet server started.
+2025-01-28 00:06:51,749 - TelegramBot - INFO - Wallet server started.
+2025-01-28 00:06:51,749 - TelegramBot - INFO - Wallet server started.
+2025-01-28 00:06:51,749 - TelegramBot - INFO - Wallet server started.
+2025-01-28 00:06:51,858 - TelegramBot - INFO - Bot started successfully
+2025-01-28 00:06:51,858 - TelegramBot - INFO - Bot started successfully
+2025-01-28 00:06:51,858 - TelegramBot - INFO - Bot started successfully
+2025-01-28 00:06:51,858 - TelegramBot - INFO - Bot started successfully
+2025-01-28 00:06:51,858 - TelegramBot - INFO - Bot started successfully
+2025-01-28 00:06:51,858 - TelegramBot - INFO - Bot started successfully

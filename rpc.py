@@ -16,7 +16,7 @@ import aiohttp
 import asyncio
 
 from logger import setup_logging
-from config import RPC_URL, RPC_PORT,WALLET_DIR
+from config import RPC_URL, RPC_PORT,WALLET_DIR, LOG_WALLET
 
 logger = setup_logging()
 
@@ -294,7 +294,7 @@ async def wallet_exists(wallet_path):
 def start_wallet_rpc():
     """Function to start the ryo-wallet-rpc server."""
     # wallet_dir = "./testwall"  # Path to your wallet directory
-    command = f"./ryo-wallet-rpc --rpc-bind-port {RPC_PORT} --disable-rpc-login --wallet-dir {WALLET_DIR}"
+    command = f"./ryo-wallet-rpc --rpc-bind-port {RPC_PORT} --disable-rpc-login --wallet-dir {WALLET_DIR} --log-file {LOG_WALLET}"
     
     if not os.path.exists(WALLET_DIR):
         os.makedirs(WALLET_DIR)
