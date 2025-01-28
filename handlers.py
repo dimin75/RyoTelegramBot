@@ -723,6 +723,8 @@ async def balance_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> i
     else:
         balance, unlocked_balance = wallet_balance
         await update.message.reply_text(
+            f"Wallet Balance full version: {balance } RYO\n"
+            f"Unlocked Balance full version: {unlocked_balance } RYO"
             f"Wallet Balance: {balance / 1e12:.2f} RYO\n"
             f"Unlocked Balance: {unlocked_balance / 1e12:.2f} RYO"
         )    
