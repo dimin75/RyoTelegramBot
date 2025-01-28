@@ -374,8 +374,8 @@ async def send_ryo_sum(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     else:
         balance, unlocked_balance = wallet_balance
         await update.message.reply_text(
-            f"Wallet Balance: {balance / 1e12:.2f} RYO\n"
-            f"Unlocked Balance: {unlocked_balance / 1e12:.2f} RYO"
+            f"Wallet Balance: {balance / 1e9:.2f} RYO\n"
+            f"Unlocked Balance: {unlocked_balance / 1e9:.2f} RYO"
         )
         context.user_data["spent_balance"] = balance
 
@@ -725,8 +725,8 @@ async def balance_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> i
         await update.message.reply_text(
             f"Wallet Balance full version: {balance } RYO\n"
             f"Unlocked Balance full version: {unlocked_balance } RYO"
-            f"Wallet Balance: {balance / 1e12:.2f} RYO\n"
-            f"Unlocked Balance: {unlocked_balance / 1e12:.2f} RYO"
+            f"Wallet Balance: {balance / 1e9:.2f} RYO\n"
+            f"Unlocked Balance: {unlocked_balance / 1e9:.2f} RYO"
         )    
 
     wallet_closed = await close_wallet_rpc(user_id, user_pass)
