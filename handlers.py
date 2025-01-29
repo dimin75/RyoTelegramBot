@@ -413,6 +413,8 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
     if send_action == '/pay_id':
         await update.message.reply_text(f"Enter your payment id:")
         return MAKE_SEND_TRANSACTION_PAY_ID
+    await update.message.reply_text(f"You want to spend {sum_ryo_send} in int({int(sum_ryo_send)})")
+    await update.message.reply_text(f"You have in wallet {curr_wallet_balance} in int{int(curr_wallet_balance)}")
     if int(curr_wallet_balance) < int(sum_ryo_send):
         await update.message.reply_text(f"You have enough money to spend. Now make transaction...")
     else:
