@@ -417,7 +417,7 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
         await update.message.reply_text(f"You have enough money to spend. Now make transaction...")
     else:
         await update.message.reply_text(f"You don't have enough money to spend. Now make transaction...")
-        returnversationHandler.END
+        return  ConversationHandler.END
     #session = Session()
     #user_username = update.effective_user.username
     #user_id = user_username
