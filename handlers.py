@@ -379,11 +379,11 @@ async def send_ryo_sum(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
         )
         context.user_data["spent_balance"] = balance
 
-    wallet_closed = await close_wallet_rpc(user_id, user_pass)
-    if wallet_closed:
-        await update.message.reply_text("Wallet closed.")
-    else:
-        await update.message.reply_text("Some problem appeared during the wallet closing...")
+    #wallet_closed = await close_wallet_rpc(user_id, user_pass)
+    #if wallet_closed:
+        #await update.message.reply_text("Wallet closed.")
+    #else:
+        #await update.message.reply_text("Some problem appeared during the wallet closing...")
 
 
     await update.message.reply_text(f"Please input sum to send.")
@@ -402,13 +402,37 @@ async def send_ryo_confirm(update: Update, context: ContextTypes.DEFAULT_TYPE) -
 
 async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     send_action = update.message.text.lower()
+    user_id = context.user_data.get("user_id")
+    user_pass = context.user_data.get("user_pass")
+    sum_ryo_send = context.user_data.get("sum_ryo_send")
+    send_ryo_address = context.user_data.get("send_ryo_address")
+    curr_wallet_balance = context.user_data.get("spent_balance")
     await update.message.reply_text(f"Okay. You replied with {send_action}")
     if send_action == 'yes':
         await update.message.reply_text(f"Will send your money as you requested...")
     if send_action == '/pay_id':
         await update.message.reply_text(f"Enter your payment id:")
         return MAKE_SEND_TRANSACTION_PAY_ID
-    return ConversationHandler.END
+    if int(curr_wallet_balance) < int(sum_ryo_send):
+        await update.message.reply_text(f"You have enough money to spend. Now make transaction...")
+    else:
+        await update.message.reply_text(f"You don't have enough money to spend. Now make transaction...")
+    #session = Session()
+    #user_username = update.effective_user.username
+    #user_id = user_username
+
+   ## Get user's wallet from the database
+    #user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
+    #if not user_wallet:
+        #await update.message.reply_text("You don't have a wallet yet. Use /create_wallet to create one.")
+        #session.close()
+        #returnversationHandler.END
+    wallet_closed = await close_wallet_rpc(user_id, user_pass)
+    if wallet_closed:
+        await update.message.reply_text("Wallet closed.")
+    else:
+        await update.message.reply_text("Some problem appeared during the wallet closing...")
+    returnversationHandler.END
 
 async def msend_trans_payid(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     pay_id = update.message.text.lower()
@@ -723,8 +747,6 @@ async def balance_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> i
     else:
         balance, unlocked_balance = wallet_balance
         await update.message.reply_text(
-            f"Wallet Balance full version: {balance } RYO\n"
-            f"Unlocked Balance full version: {unlocked_balance } RYO"
             f"Wallet Balance: {balance / 1e9:.2f} RYO\n"
             f"Unlocked Balance: {unlocked_balance / 1e9:.2f} RYO"
         )    

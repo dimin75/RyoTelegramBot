@@ -178,6 +178,68 @@ async def close_wallet_rpc(rpc_user, password):
     # if 'error' in result:
     #     logger.info(f"Error closing wallet: {result['error']['message']}")
 
+async def send_coins_rpc(rpc_amoount, rpc_address)
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    params_send = {
+        "jsonrpc": "2.0",
+        "method": "transfer",
+        "params": {
+            "destinations": [{"amount": rpc_amount, "address": rpc_recipient}],
+            "mixin": 5,  # amount of mixins
+            "get_tx_key": True,
+            "get_tx_metadata": True,
+            "do_not_relay": True  #create, but not send
+        },
+        "id": "0"
+    }
+    try:
+
+        await update.message.reply_text("Send Ryo to recipient...")
+        response = requests.post(url, json=params_send, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        await asyncio.sleep(1)
+
+        logger.info(f"RPC send. Response status code: {response.status_code}")
+        logger.info(f"Response text: {response.text}")
+
+        # Check if the response status code indicates success
+        if response.status_code != 200:
+            await update.message.reply_text(f"Error: received status code {response.status_code}")
+            session.close()
+            return
+
+        # Check if the response body is empty or invalid
+        if not response.text:
+            await update.message.reply_text("Error: Empty response from the wallet RPC.")
+            session.close()
+            return
+
+        result = response.json()
+
+        logger.info(f"Response JSON: {json.dumps(result, indent=4)}")
+
+        if 'error' in result:
+            await update.message.reply_text(f"Error initiating transfer: {result['error']['message']}")
+        else:
+        # Storing tx_metadata for the future signing
+            # context.user_data['unsigned_txset'] = result.get('result', {}).get('unsigned_txset')
+            context.user_data['tx_metadata'] = result.get('result', {}).get('tx_metadata')
+            fee = result.get('result', {}).get('fee') / 1e9  # Comission in RYO
+            tr2sign = context.user_data.get('tx_metadata')
+            await update.message.reply_text(f"Tx metadata: {tr2sign[:20]} ...")
+            await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo. Do you want to proceed? Reply with 'yes' or 'no'.")
+            #context.user_data['action'] = 'approve_submission'
+    except requests.exceptions.RequestException as e:
+        # Log of exception
+        logger.error(f"Error making the RPC request: {str(e)}")
+        await update.message.reply_text(f"Error making the RPC request: {str(e)}")
+
+    except json.decoder.JSONDecodeError as e:
+        # Log of error decoding JSON
+        logger.error(f"Error parsing JSON response: {str(e)}")
+        await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
+
 async def get_seed_mnemonic_rpc(rpc_user, rpc_password):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
     headers = {"Content-Type": "application/json"}
