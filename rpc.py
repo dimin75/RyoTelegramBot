@@ -178,7 +178,7 @@ async def close_wallet_rpc(rpc_user, password):
     # if 'error' in result:
     #     logger.info(f"Error closing wallet: {result['error']['message']}")
 
-async def send_coins_rpc(rpc_amoount, rpc_address)
+async def send_coins_rpc(rpc_amoount, rpc_address):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
     headers = {"Content-Type": "application/json"}
     params_send = {
