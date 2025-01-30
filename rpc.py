@@ -19,6 +19,9 @@ import json
 from logger import setup_logging
 from config import RPC_URL, RPC_PORT,WALLET_DIR, LOG_WALLET
 
+from telegram import Update
+from telegram.ext import ContextTypes, CallbackContext, ConversationHandler
+
 logger = setup_logging()
 
 async def delete_wallet_files(wallet_name: str) -> None:
@@ -179,7 +182,7 @@ async def close_wallet_rpc(rpc_user, password):
     # if 'error' in result:
     #     logger.info(f"Error closing wallet: {result['error']['message']}")
 
-async def send_coins_rpc(rpc_amount, rpc_address, rpc_user, rpc_password):
+async def send_coins_rpc(update: Update, context: CallbackContext, rpc_amount, rpc_address, rpc_user, rpc_password):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
     headers = {"Content-Type": "application/json"}
     params_send = {
@@ -207,14 +210,14 @@ async def send_coins_rpc(rpc_amount, rpc_address, rpc_user, rpc_password):
 
         # Check if the response status code indicates success
         if response.status_code != 200:
-            #await update.message.reply_text(f"Error: received status code {response.status_code}")
+            await update.message.reply_text(f"Error: received status code {response.status_code}")
             logger.info(f"Error: received status code {response.status_code}")
             session.close()
             return
 
         # Check if the response body is empty or invalid
         if not response.text:
-            #await update.message.reply_text("Error: Empty response from the wallet RPC.")
+            await update.message.reply_text("Error: Empty response from the wallet RPC.")
             logger.info(f"Error: Empty response from the wallet RPC.")
             session.close()
             return
@@ -224,7 +227,7 @@ async def send_coins_rpc(rpc_amount, rpc_address, rpc_user, rpc_password):
         logger.info(f"Response JSON: {json.dumps(result, indent=4)}")
 
         if 'error' in result:
-            #await update.message.reply_text(f"Error initiating transfer: {result['error']['message']}")
+            await update.message.reply_text(f"Error initiating transfer: {result['error']['message']}")
             logger.info(f"Error initiating transfer: {result['error']['message']}")
         else:
         # Storing tx_metadata for the future signing
@@ -232,8 +235,8 @@ async def send_coins_rpc(rpc_amount, rpc_address, rpc_user, rpc_password):
             context.user_data['tx_metadata'] = result.get('result', {}).get('tx_metadata')
             fee = result.get('result', {}).get('fee') / 1e9  # Comission in RYO
             tr2sign = context.user_data.get('tx_metadata')
-            #await update.message.reply_text(f"Tx metadata: {tr2sign[:20]} ...")
-            #await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo.")
+            await update.message.reply_text(f"Tx metadata: {tr2sign[:20]} ...")
+            await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo.")
             logger.info(f"Tx metadata: {tr2sign[:20]} ...")
             logger.info(f"Transfer initiated. The network fee is {fee} Ryo.")
             #await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo. Do you want to proceed? Reply with 'yes' or 'no'.")
