@@ -417,26 +417,25 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
     await update.message.reply_text(f"You have in wallet {ryoval2user(curr_wallet_balance)} in int({curr_wallet_balance})")
     if ryoval2user(curr_wallet_balance) > float(sum_ryo_send):
         await update.message.reply_text(f"You have enough money to spend. Now make transaction...")
+        money_send = await send_coins_rpc(user2ryoval(sum_ryo_send), rpc_address, user_id, user_pass)
+        if not money_send:
+            await update.message.reply_text("Failed to create send transaction. Try again later. Or call support.")
+            return ConversationHandler.END
+        transfer_submit = await submit_transaction_rpc(user_id, user_pass)
+        if not transfer_submit:
+            await update.message.reply_text("Can't submit transaction. Check your balance. Try again later. Or call support.")
+            return ConversationHandler.END
     else:
         await update.message.reply_text(f"You don't have enough money to spend. Choose other amount of RYO to send.")
         return  ConversationHandler.END
-    #session = Session()
-    #user_username = update.effective_user.username
-    #user_id = user_username
 
-   ## Get user's wallet from the database
-    #user_wallet = session.query(UserWallet).filter_by(user_id=str(user_id)).first()
-    #if not user_wallet:
-        #await update.message.reply_text("You don't have a wallet yet. Use /create_wallet to create one.")
-        #session.close()
-        #returnversationHandler.END
     wallet_closed = await close_wallet_rpc(user_id, user_pass)
     if wallet_closed:
         await update.message.reply_text("Wallet closed.")
     else:
         await update.message.reply_text("Some problem appeared during the wallet closing...")
 
-    returnversationHandler.END
+    return ConversationHandler.END
 
 async def msend_trans_payid(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     pay_id = update.message.text.lower()

@@ -178,7 +178,7 @@ async def close_wallet_rpc(rpc_user, password):
     # if 'error' in result:
     #     logger.info(f"Error closing wallet: {result['error']['message']}")
 
-async def send_coins_rpc(rpc_amoount, rpc_address):
+async def send_coins_rpc(rpc_amoount, rpc_address, rpc_user, rpc_password):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
     headers = {"Content-Type": "application/json"}
     params_send = {
@@ -228,7 +228,8 @@ async def send_coins_rpc(rpc_amoount, rpc_address):
             fee = result.get('result', {}).get('fee') / 1e9  # Comission in RYO
             tr2sign = context.user_data.get('tx_metadata')
             await update.message.reply_text(f"Tx metadata: {tr2sign[:20]} ...")
-            await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo. Do you want to proceed? Reply with 'yes' or 'no'.")
+            await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo.")
+            #await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo. Do you want to proceed? Reply with 'yes' or 'no'.")
             #context.user_data['action'] = 'approve_submission'
     except requests.exceptions.RequestException as e:
         # Log of exception
@@ -239,6 +240,66 @@ async def send_coins_rpc(rpc_amoount, rpc_address):
         # Log of error decoding JSON
         logger.error(f"Error parsing JSON response: {str(e)}")
         await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
+
+async def submit_transaction_rpc(rpc_user, rpc_password):
+    tx_metadata = context.user_data.get('tx_metadata')
+    #rpc_user = context.user_data.get('rpc_id')
+    #rpc_password = context.user_data.get('rpc_psw')
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    params_submit = {
+        "jsonrpc": "2.0",
+        "method": "submit_transfer",
+        "params": {
+            "tx_data_hex": tx_metadata
+        },
+        "id": "0"
+    }
+
+    try:
+        # response = requests.post(WALLET_RPC_URL, json=params, headers=HEADERS)
+        response = requests.post(url, json=params_submit, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        logger.info(f"Response status code: {response.status_code}")
+        logger.info(f"Response text: {response.text}")
+
+        # Check if the response status code indicates success
+        if response.status_code != 200:
+            await update.message.reply_text(f"Error: received status code {response.status_code}")
+            # session.close()
+            return
+
+        # Check if the response body is empty or invalid
+        if not response.text:
+            await update.message.reply_text("Error: Empty response from the wallet RPC.")
+            # session.close()
+            return
+
+        result = response.json()
+
+        logger.info(f"Response JSON: {json.dumps(result, indent=4)}")
+
+        # result = response.json()
+
+        if 'error' in result:
+            await update.message.reply_text(f"Transaction: {signed_txset}")
+            await update.message.reply_text(f"Error submitting transaction: {result['error']['message']}")
+        else:
+            tx_hash_list = result.get('result', {}).get('tx_hash_list')
+            await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_hash_list[0]}")
+
+    except requests.exceptions.RequestException as e:
+        # Log of exception
+        logger.error(f"Error making the RPC request: {str(e)}")
+        await update.message.reply_text(f"Error making the RPC request: {str(e)}")
+
+    except json.decoder.JSONDecodeError as e:
+        # Log of error decoding JSON
+        logger.error(f"Error parsing JSON response: {str(e)}")
+        await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
+
+    finally:
+        await update.message.reply_text(f"Submit transaction over")
 
 async def get_seed_mnemonic_rpc(rpc_user, rpc_password):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
