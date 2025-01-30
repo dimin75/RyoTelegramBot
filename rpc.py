@@ -201,7 +201,8 @@ async def send_coins_rpc(update: Update, context: CallbackContext, rpc_amount, r
 
         # await update.message.reply_text("Send Ryo to recipient...")
         logger.info(f"Send Ryo to recipient...: {rpc_user}")
-        response = requests.post(url, json=params_send, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+        #response = requests.post(url, json=params_send, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+        response = requests.post(url, json=params_send, headers=headers)
 
         await asyncio.sleep(1)
 
