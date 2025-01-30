@@ -30,7 +30,8 @@ from rpc import (
     create_wallet_via_rpc, restore_wallet_via_rpc, 
     open_wallet_rpc, get_address_wallet_rpc,
     close_wallet_rpc, get_balance_wallet_rpc,
-    get_seed_mnemonic_rpc
+    get_seed_mnemonic_rpc, send_coins_rpc,
+    submit_transaction_rpc
     )
 
 import asyncio
