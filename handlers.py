@@ -418,7 +418,7 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
     await update.message.reply_text(f"You have in wallet {ryoval2user(curr_wallet_balance)} in int({curr_wallet_balance})")
     if ryoval2user(curr_wallet_balance) > float(sum_ryo_send):
         await update.message.reply_text(f"You have enough money to spend. Now make transaction...")
-        money_send = await send_coins_rpc(update, context, (sum_ryo_send), send_ryo_address, user_id, user_pass)
+        money_send = await send_coins_rpc(update, context, user2ryoval(sum_ryo_send), send_ryo_address, user_id, user_pass)
         if not money_send:
             await update.message.reply_text("Failed to create send transaction. Try again later. Or call support.")
             return ConversationHandler.END
