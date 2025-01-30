@@ -204,7 +204,7 @@ async def send_coins_rpc(update: Update, context: CallbackContext, ryo_sum, rpc_
         logger.info(f"Send Ryo to recipient...: {rpc_user}")
         await update.message.reply_text(f"Send RYO from recipient: {rpc_user}")
         await update.message.reply_text(f"Send RYO to address: {rpc_address}")
-        await update.message.reply_text(f"Send RYO amount: {rpc_amount}")
+        #await update.message.reply_text(f"Send RYO amount: {rpc_amount}")
         response = requests.post(url, json=params_send, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
         await update.message.reply_text(f"final transaction: {params_send}")
         #response = requests.post(url, json=params_send, headers=headers)
