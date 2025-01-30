@@ -182,7 +182,8 @@ async def close_wallet_rpc(rpc_user, password):
     # if 'error' in result:
     #     logger.info(f"Error closing wallet: {result['error']['message']}")
 
-async def send_coins_rpc(update: Update, context: CallbackContext, rpc_amount, rpc_address, rpc_user, rpc_password):
+async def send_coins_rpc(update: Update, context: CallbackContext, ryo_sum, rpc_address, rpc_user, rpc_password):
+    rpc_amount = int(ryo_sum)
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
     headers = {"Content-Type": "application/json"}
     params_send = {
@@ -201,8 +202,12 @@ async def send_coins_rpc(update: Update, context: CallbackContext, rpc_amount, r
 
         # await update.message.reply_text("Send Ryo to recipient...")
         logger.info(f"Send Ryo to recipient...: {rpc_user}")
-        #response = requests.post(url, json=params_send, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
-        response = requests.post(url, json=params_send, headers=headers)
+        await update.message.reply_text(f"Send RYO from recipient: {rpc_user}")
+        await update.message.reply_text(f"Send RYO to address: {rpc_address}")
+        await update.message.reply_text(f"Send RYO amount: {rpc_amount}")
+        response = requests.post(url, json=params_send, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+        await update.message.reply_text(f"final transaction: {params_send}")
+        #response = requests.post(url, json=params_send, headers=headers)
 
         await asyncio.sleep(1)
 
