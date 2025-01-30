@@ -21,7 +21,7 @@ def ryoval2user(ryo_val):
     return float(ryo_val / 1e9)
 
 def user2ryoval(val):
-    return int(val * 1e9)
+    return int(float(val) * 1e9)
 
 def hash_password(password: str) -> str:
     # Salt and hash generation
