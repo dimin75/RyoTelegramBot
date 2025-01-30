@@ -425,7 +425,10 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
         transfer_submit = await submit_transaction_rpc(user_id, user_pass)
         if not transfer_submit:
             await update.message.reply_text("Can't submit transaction. Check your balance. Try again later. Or call support.")
-            return ConversationHandler.END
+            return ConversationHandler.
+        if transfer_submit:
+             tx_fin_value = context.user_data.get['tx_hash_final']
+             await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_fin_value}")
     else:
         await update.message.reply_text(f"You don't have enough money to spend. Choose other amount of RYO to send.")
         return  ConversationHandler.END
