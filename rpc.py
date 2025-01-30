@@ -206,7 +206,7 @@ async def send_coins_rpc(update: Update, context: CallbackContext, ryo_sum, rpc_
         await update.message.reply_text(f"Send RYO to address: {rpc_address}")
         #await update.message.reply_text(f"Send RYO amount: {rpc_amount}")
         response = requests.post(url, json=params_send, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
-        await update.message.reply_text(f"final transaction: {params_send}")
+        #await update.message.reply_text(f"final transaction: {params_send}")
         #response = requests.post(url, json=params_send, headers=headers)
 
         await asyncio.sleep(1)
@@ -245,6 +245,7 @@ async def send_coins_rpc(update: Update, context: CallbackContext, ryo_sum, rpc_
             await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo.")
             logger.info(f"Tx metadata: {tr2sign[:20]} ...")
             logger.info(f"Transfer initiated. The network fee is {fee} Ryo.")
+            return True
             #await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo. Do you want to proceed? Reply with 'yes' or 'no'.")
             #context.user_data['action'] = 'approve_submission'
     except requests.exceptions.RequestException as e:
@@ -308,6 +309,7 @@ async def submit_transaction_rpc(rpc_user, rpc_password):
             tx_hash_list = result.get('result', {}).get('tx_hash_list')
             logger.info(f"Transaction submitted successfully! Tx Hash: {tx_hash_list[0]}")
             context.user_data['tx_hash_final'] = tx_hash_list[0]
+            return True
             #await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_hash_list[0]}")
 
     except requests.exceptions.RequestException as e:
