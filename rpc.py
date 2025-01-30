@@ -14,6 +14,7 @@ import requests
 from requests.auth import HTTPDigestAuth
 import aiohttp
 import asyncio
+import json
 
 from logger import setup_logging
 from config import RPC_URL, RPC_PORT,WALLET_DIR, LOG_WALLET
