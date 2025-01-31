@@ -31,7 +31,7 @@ from rpc import (
     open_wallet_rpc, get_address_wallet_rpc,
     close_wallet_rpc, get_balance_wallet_rpc,
     get_seed_mnemonic_rpc, send_coins_rpc,
-    submit_transaction_rpc
+    submit_transaction_rpc, valid_address
     )
 
 import asyncio
@@ -358,6 +358,13 @@ async def send_address_input(update: Update, context: ContextTypes.DEFAULT_TYPE)
 async def send_ryo_sum(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     send_ryo_address = update.message.text
     context.user_data["send_ryo_address"] = send_ryo_address
+    await update.message.reply_text("Checking your recipient address validity...")
+    address_ok = await valid_address(send_ryo_address)
+    if address_ok:
+        print(f"address {send_ryo_address} is valid")
+    else:
+        print(f"address {send_ryo_address} not valid")
+        return ConversationHandler.END
     await update.message.reply_text("Fetching your wallet balance...")
     user_id = context.user_data.get("user_id")
     user_pass = context.user_data.get("user_pass")

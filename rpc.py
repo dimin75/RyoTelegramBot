@@ -151,6 +151,24 @@ async def open_wallet_rpc(rpc_user, password):
     if 'error' in result:
         logger.info(f"Error opening wallet: {result['error']['message']}")
 
+async def valid_address(rpc_address):
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    payload = {
+        "jsonrpc": "2.0",
+        "id": "0",
+        "method": "validate_address",
+        "params": {"address": address}
+    }
+
+    try:
+        response = requests.post(RYO_RPC_URL, json=payload)
+        result = response.json().get("result", {})
+        return result.get("valid", False)
+    except Exception as e:
+        print(f"Error address Checking: {e}")
+        return False
+
+
 async def close_wallet_rpc(rpc_user, password):
     lrpc_user = rpc_user
     user_wall_name = f"{lrpc_user}_wallet"
@@ -245,8 +263,8 @@ async def send_coins_rpc(update: Update, context: CallbackContext, ryo_sum, rpc_
             await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo.")
             logger.info(f"Tx metadata: {tr2sign[:20]} ...")
             logger.info(f"Transfer initiated. The network fee is {fee} Ryo.")
-            await update.message.reply_text(f"Submit transaction in test mode: {tr2sign[:20]} ...")
-            await submit_transaction_rpc(rpc_user, rpc_password)
+            #await update.message.reply_text(f"Submit transaction in test mode: {tr2sign[:20]} ...")
+            #await submit_transaction_rpc(rpc_user, rpc_password)
             return True
             #await update.message.reply_text(f"Transfer initiated. The network fee is {fee} Ryo. Do you want to proceed? Reply with 'yes' or 'no'.")
             #context.user_data['action'] = 'approve_submission'
