@@ -361,9 +361,9 @@ async def send_ryo_sum(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     await update.message.reply_text("Checking your recipient address validity...")
     address_ok = await valid_address(send_ryo_address)
     if address_ok:
-        print(f"address {send_ryo_address} is valid")
+        await update.message.reply_text(f"address {send_ryo_address} is valid")
     else:
-        print(f"address {send_ryo_address} not valid")
+        await update.message.reply_text(f"address {send_ryo_address} not valid")
         return ConversationHandler.END
     await update.message.reply_text("Fetching your wallet balance...")
     user_id = context.user_data.get("user_id")
