@@ -151,7 +151,7 @@ async def open_wallet_rpc(rpc_user, password):
     if 'error' in result:
         logger.info(f"Error opening wallet: {result['error']['message']}")
 
-async def valid_address(rpc_address):
+async def valid_address(address):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
     payload = {
         "jsonrpc": "2.0",
