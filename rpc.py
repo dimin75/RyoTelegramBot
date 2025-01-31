@@ -278,8 +278,8 @@ async def send_coins_rpc(update: Update, context: CallbackContext, ryo_sum, rpc_
         logger.error(f"Error parsing JSON response: {str(e)}")
         #await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
 
-async def submit_transaction_rpc(rpc_user, rpc_password):
-    tx_metadata = context.user_data.get('tx_metadata')
+async def submit_transaction_rpc(rpc_user, rpc_password, tx_metadata):
+    #tx_metadata = context.user_data.get('tx_metadata')
     #rpc_user = context.user_data.get('rpc_id')
     #rpc_password = context.user_data.get('rpc_psw')
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"

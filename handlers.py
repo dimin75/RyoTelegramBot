@@ -430,8 +430,9 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
         money_send = await send_coins_rpc(update, context, user2ryoval(sum_ryo_send), send_ryo_address, user_id, user_pass)
         #if not money_send:
             #await update.message.reply_text("Failed to create send transaction. Try again later. Or call support.")
-            #return ConversationHandler.END
-        transfer_submit = await submit_transaction_rpc(user_id, user_pass)
+            #return ConversationHandler.
+        tx_metadata = context.user_data.get('tx_metadata')
+        transfer_submit = await submit_transaction_rpc(user_id, user_pass, tx_metadata)
         #if not transfer_submit:
             #await update.message.reply_text("Can't submit transaction. Check your balance. Try again later. Or call support.")
             #return ConversationHandler.END
