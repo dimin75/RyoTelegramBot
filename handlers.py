@@ -434,15 +434,15 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
         tx_metadata = context.user_data.get('tx_metadata')
         sign2send = await sign_transaction_rpc(update, context, tx_metadata, user_id, user_pass)
 
-        signed_txset = context.user_data.get('signed_txset')
-        transfer_submit = await submit_transaction_rpc(update, context, signed_txset, user_id, user_pass)
+        #signed_txset = context.user_data.get('signed_txset')
+        #transfer_submit = await submit_transaction_rpc(update, context, signed_txset, user_id, user_pass)
         #if not transfer_submit:
             #await update.message.reply_text("Can't submit transaction. Check your balance. Try again later. Or call support.")
             #return ConversationHandler.END
-        if transfer_submit:
-             tx_fin_value = context.user_data.get['tx_hash_final']
-             await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_fin_value}")
-        await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_fin_value}")
+        #if transfer_submit:
+             #tx_fin_value = context.user_data.get['tx_hash_final']
+             #await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_fin_value}")
+        #await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_fin_value}")
     else:
         await update.message.reply_text(f"You don't have enough money to spend. Choose other amount of RYO to send.")
         return  ConversationHandler.END

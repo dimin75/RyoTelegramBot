@@ -390,6 +390,7 @@ async def submit_transaction_rpc(update: Update, context: CallbackContext, signe
             logger.info(f"Error submitting transaction: {result['error']['message']}")
             await update.message.reply_text(f"Transaction: {signed_txset}")
             await update.message.reply_text(f"Error submitting transaction: {result['error']['message']}")
+            return False
         else:
             tx_hash_list = result.get('result', {}).get('tx_hash_list')
             logger.info(f"Transaction submitted successfully! Tx Hash: {tx_hash_list[0]}")
@@ -405,7 +406,7 @@ async def submit_transaction_rpc(update: Update, context: CallbackContext, signe
 
     except json.decoder.JSONDecodeError as e:
         # Log of error decoding JSON
-        logger.error(f"Error parsing JSON response: {str(e)}")
+        logger.error(f"Error parsing JSON relsponse: {str(e)}")
         await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
 
     finally:
