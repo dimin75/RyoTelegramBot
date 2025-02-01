@@ -342,7 +342,7 @@ async def sign_transaction_rpc(update: Update, context: CallbackContext, tx_meta
     finally:
         await update.message.reply_text(f"Sign transaction over")
 
-async def submit_transaction_rpc(date: Update, context: CallbackContext, signed_txset, rpc_user, rpc_password):
+async def submit_transaction_rpc(update: Update, context: CallbackContext, signed_txset, rpc_user, rpc_password):
     #tx_metadata = context.user_data.get('tx_metadata')
     #rpc_user = context.user_data.get('rpc_id')
     #rpc_password = context.user_data.get('rpc_psw')
@@ -359,6 +359,7 @@ async def submit_transaction_rpc(date: Update, context: CallbackContext, signed_
 
     try:
         # response = requests.post(WALLET_RPC_URL, json=params, headers=HEADERS)
+        await update.message.reply_text(f"Submitting transaction {signed_txset}")
         response = requests.post(url, json=params_submit, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
 
         logger.info(f"Response status code: {response.status_code}")
