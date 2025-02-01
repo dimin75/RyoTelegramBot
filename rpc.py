@@ -278,7 +278,71 @@ async def send_coins_rpc(update: Update, context: CallbackContext, ryo_sum, rpc_
         logger.error(f"Error parsing JSON response: {str(e)}")
         #await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
 
-async def submit_transaction_rpc(rpc_user, rpc_password, tx_metadata):
+async def sign_transaction_rpc(update: Update, context: CallbackContext, tx_metadata: str, rpc_user, rpc_password) -> None:
+    # This function signs the transaction using the tx_metadata.
+    #rpc_user = context.user_data.get('rpc_id')
+    #rpc_password = context.user_data.get('rpc_psw')
+    #user_wall_name = rpc_user+"_wallet"
+    url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
+    params_sign = {
+        "jsonrpc": "2.0",
+        "method": "relay_tx",
+        "params": {
+            "hex": tx_metadata
+        },
+        "id": "0"
+    }
+    try:
+
+        await update.message.reply_text("Confirm transaction...")
+        response = requests.post(url, json=params_sign, headers=headers, auth=HTTPDigestAuth(rpc_user, rpc_password))
+
+        logger.info(f"Response status code: {response.status_code}")
+        logger.info(f"Response text: {response.text}")
+
+        await asyncio.sleep(0.1)
+
+        # Check if the response status code indicates success
+        if response.status_code != 200:
+            await update.message.reply_text(f"Error: received status code {response.status_code}")
+            # session.close()
+            return
+
+        # Check if the response body is empty or invalid
+        if not response.text:
+            await update.message.reply_text("Error: Empty response from the wallet RPC.")
+            # session.close()
+            return
+
+        result = response.json()
+
+        logger.info(f"Response JSON: {json.dumps(result, indent=4)}")
+
+        # result = response.json()
+
+        if 'error' in result:
+           await update.message.reply_text(f"Error signing transaction: {result['error']['message']}")
+        else:
+           signed_txset = result.get('result', {}).get('tx_hash')
+           await update.message.reply_text(f"Transaction signed successfully. Public hash is: {signed_txset} ")
+           context.user_data['signed_txset'] = signed_txset
+           # context.user_data['action'] = 'confirm_submission'
+
+    except requests.exceptions.RequestException as e:
+        # Log of exception
+        logger.error(f"Error making the RPC request: {str(e)}")
+        await update.message.reply_text(f"Error making the RPC request: {str(e)}")
+
+    except json.decoder.JSONDecodeError as e:
+        # Log of error decoding JSON
+        logger.error(f"Error parsing JSON response: {str(e)}")
+        await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
+
+    finally:
+        await update.message.reply_text(f"Sign transaction over")
+
+async def submit_transaction_rpc(date: Update, context: CallbackContext, signed_txset, rpc_user, rpc_password):
     #tx_metadata = context.user_data.get('tx_metadata')
     #rpc_user = context.user_data.get('rpc_id')
     #rpc_password = context.user_data.get('rpc_psw')
@@ -288,7 +352,7 @@ async def submit_transaction_rpc(rpc_user, rpc_password, tx_metadata):
         "jsonrpc": "2.0",
         "method": "submit_transfer",
         "params": {
-            "tx_data_hex": tx_metadata
+            "tx_data_hex": signed_txset
         },
         "id": "0"
     }
@@ -302,7 +366,7 @@ async def submit_transaction_rpc(rpc_user, rpc_password, tx_metadata):
 
         # Check if the response status code indicates success
         if response.status_code != 200:
-            #await update.message.reply_text(f"Error: received status code {response.status_code}")
+            await update.message.reply_text(f"Error: received status code {response.status_code}")
             logger.info(f"Error: received status code {response.status_code}")
             # session.close()
             return
@@ -310,7 +374,7 @@ async def submit_transaction_rpc(rpc_user, rpc_password, tx_metadata):
         # Check if the response body is empty or invalid
         if not response.text:
             logger.info(f"Error: Empty response from the wallet RPC.")
-            #await update.message.reply_text("Error: Empty response from the wallet RPC.")
+            await update.message.reply_text("Error: Empty response from the wallet RPC.")
             # session.close()
             return
 
@@ -323,29 +387,29 @@ async def submit_transaction_rpc(rpc_user, rpc_password, tx_metadata):
         if 'error' in result:
             logger.info(f"Transaction: {signed_txset}")
             logger.info(f"Error submitting transaction: {result['error']['message']}")
-            #await update.message.reply_text(f"Transaction: {signed_txset}")
-            #await update.message.reply_text(f"Error submitting transaction: {result['error']['message']}")
+            await update.message.reply_text(f"Transaction: {signed_txset}")
+            await update.message.reply_text(f"Error submitting transaction: {result['error']['message']}")
         else:
             tx_hash_list = result.get('result', {}).get('tx_hash_list')
             logger.info(f"Transaction submitted successfully! Tx Hash: {tx_hash_list[0]}")
             context.user_data['tx_hash_final'] = tx_hash_list[0]
+            await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_hash_list[0]}")
             return True
-            #await update.message.reply_text(f"Transaction submitted successfully! Tx Hash: {tx_hash_list[0]}")
 
     except requests.exceptions.RequestException as e:
         # Log of exception
         logger.error(f"Error making the RPC request: {str(e)}")
         logger.info(f"Error making the RPC request: {str(e)}")
-        #await update.message.reply_text(f"Error making the RPC request: {str(e)}")
+        await update.message.reply_text(f"Error making the RPC request: {str(e)}")
 
     except json.decoder.JSONDecodeError as e:
         # Log of error decoding JSON
         logger.error(f"Error parsing JSON response: {str(e)}")
-        #await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
+        await update.message.reply_text(f"Error parsing JSON response: {str(e)}")
 
     finally:
         logger.error(f"Submit transaction over")
-        #await update.message.reply_text(f"Submit transaction over")
+        await update.message.reply_text(f"Submit transaction over")
 
 async def get_seed_mnemonic_rpc(rpc_user, rpc_password):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"

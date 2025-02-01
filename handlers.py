@@ -31,7 +31,7 @@ from rpc import (
     open_wallet_rpc, get_address_wallet_rpc,
     close_wallet_rpc, get_balance_wallet_rpc,
     get_seed_mnemonic_rpc, send_coins_rpc,
-    submit_transaction_rpc, valid_address
+    submit_transaction_rpc, valid_address, sign_transaction_rpc
     )
 
 import asyncio
@@ -432,7 +432,10 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
             #await update.message.reply_text("Failed to create send transaction. Try again later. Or call support.")
             #return ConversationHandler.
         tx_metadata = context.user_data.get('tx_metadata')
-        transfer_submit = await submit_transaction_rpc(user_id, user_pass, tx_metadata)
+        sign2send = await sign_transaction_rpc(update, context, tx_metadata, user_id, user_pass))
+
+        signed_txset = context.user_data.get('signed_txset')
+        transfer_submit = await submit_transaction_rpc(update, context, signed_txset, user_id, user_pass)
         #if not transfer_submit:
             #await update.message.reply_text("Can't submit transaction. Check your balance. Try again later. Or call support.")
             #return ConversationHandler.END
