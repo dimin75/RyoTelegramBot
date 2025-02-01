@@ -432,7 +432,7 @@ async def msend_trans(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
             #await update.message.reply_text("Failed to create send transaction. Try again later. Or call support.")
             #return ConversationHandler.
         tx_metadata = context.user_data.get('tx_metadata')
-        sign2send = await sign_transaction_rpc(update, context, tx_metadata, user_id, user_pass))
+        sign2send = await sign_transaction_rpc(update, context, tx_metadata, user_id, user_pass)
 
         signed_txset = context.user_data.get('signed_txset')
         transfer_submit = await submit_transaction_rpc(update, context, signed_txset, user_id, user_pass)
