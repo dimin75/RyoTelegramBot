@@ -2,7 +2,11 @@
 FROM python:3.10.12-slim
 
 RUN apt update && apt install -y \
-    libboost-all-dev \
+    build-essential cmake pkg-config \ 
+    libboost-all-dev libssl-dev libzmq3-dev \ 
+    libunbound-dev libsodium-dev libunwind8-dev \
+    liblzma-dev libreadline6-dev libldns-dev \
+    libexpat1-dev doxygen graphviz libpgm-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
