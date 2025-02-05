@@ -1,6 +1,10 @@
 # Используем официальный образ Python
 FROM python:3.10.12-slim
 
+RUN apt update && apt install -y \
+    libboost-all-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
 # Устанавливаем необходимые зависимости
