@@ -358,14 +358,14 @@ async def send_address_input(update: Update, context: ContextTypes.DEFAULT_TYPE)
 async def send_ryo_sum(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     send_ryo_address = update.message.text
     context.user_data["send_ryo_address"] = send_ryo_address
-    #await update.message.reply_text("Checking your recipient address validity...")
-    #address_ok = await valid_address(send_ryo_address)
-    #if address_ok:
-        #await update.message.reply_text(f"address {send_ryo_address} is valid")
-        #logger.info(f"User {user_id} transaction confirmed - address valid")
-    #else:
-        #await update.message.reply_text(f"address {send_ryo_address} not valid")
-        #logger.info(f"User {user_id} transaction declined - not valid address")
+    await update.message.reply_text("Checking your recipient address validity...")
+    address_ok = await valid_address(send_ryo_address)
+    if address_ok:
+        await update.message.reply_text(f"address {send_ryo_address} is valid")
+        logger.info(f"User {user_id} transaction confirmed - address valid")
+    else:
+        await update.message.reply_text(f"address {send_ryo_address} not valid")
+        logger.info(f"User {user_id} transaction declined - not valid address")
         #return ConversationHandler.END
     await update.message.reply_text("Fetching your wallet balance...")
     user_id = context.user_data.get("user_id")
