@@ -160,8 +160,8 @@ async def valid_address(address):
         "method": "validate_address",
         "params": {
             "address": address,
-            "any_net_type":true,
-            "allow_openalias":true
+            "any_net_type": True,
+            "allow_openalias": True
          }
     }
 
