@@ -153,15 +153,20 @@ async def open_wallet_rpc(rpc_user, password):
 
 async def valid_address(address):
     url = f"http://127.0.0.1:{RPC_PORT}/json_rpc"
+    headers = {"Content-Type": "application/json"}
     payload = {
         "jsonrpc": "2.0",
         "id": "0",
         "method": "validate_address",
-        "params": {"address": address}
+        "params": {
+            "address": address,
+            "any_net_type":true,
+            "allow_openalias":true
+         }
     }
 
     try:
-        response = requests.post(RYO_RPC_URL, json=payload)
+        response = requests.post(url, json=payload, headers=headers)
         result = response.json().get("result", {})
         return result.get("valid", False)
     except Exception as e:
